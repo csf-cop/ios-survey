@@ -23,11 +23,13 @@ enum SurveysByCategory {
 enum SurveysCategoryType {
     case cell
     case nib
+    case header
     
     var name: String {
         switch self {
         case .cell: return "SurverCategoryCell"
         case .nib: return "SurverCategoryCollectionViewCell"
+        case .header: return "SurverCategoryCollectionCellHeader"
         }
     }
 }

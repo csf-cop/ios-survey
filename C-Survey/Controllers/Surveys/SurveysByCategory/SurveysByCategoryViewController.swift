@@ -38,6 +38,7 @@ extension SurveysByCategoryViewController: UITableViewDataSource, UITableViewDel
             return UITableViewCell()
         }
         cell.backgroundColor = .orange
+        cell.viewModel = viewModel?.getCellModel(index: indexPath)
         return cell
     }
     

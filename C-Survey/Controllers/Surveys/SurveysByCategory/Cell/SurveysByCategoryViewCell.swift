@@ -10,9 +10,10 @@ import UIKit
 
 class SurveysByCategoryViewCell: UITableViewCell {
 
+    @IBOutlet weak var displayValueLabel: UILabel!
     var viewModel: SurveysByCategoryCellModel? {
         didSet {
-            print("Set value to cell.")
+            displayValueLabel.text = viewModel?.displayValue
         }
     }
     override func awakeFromNib() {

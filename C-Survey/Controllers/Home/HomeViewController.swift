@@ -58,8 +58,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         }
         cell.backgroundColor = .gray
         cell.viewModel = SurveyCategoryCellViewModel(id: indexPath.row, value: String(indexPath.section))
-//        settingCellData(cell: cell, indexPath: indexPath)
-//        viewModel!.getCellModel(indexPath: indexPath)
+        cell.delegate = self
         return cell
     }
     
@@ -109,6 +108,8 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
 
 extension HomeViewController: SurverCategoryCellDelegate {
     func clickToCategory(view: SurverCategoryCollectionViewCell, value: Int) {
-        print("Click to button: \(value)")
+        let surveysViewController = SurveysByCategoryViewController()
+        surveysViewController.viewModel = SurveysByCategoryViewModel(id: String(value))
+        navigationController?.pushViewController(surveysViewController, animated: true)
     }
 }
