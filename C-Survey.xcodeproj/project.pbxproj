@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720D235B2375C2DB0006CD2C /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D23592375C2DB0006CD2C /* MainTabbarViewController.swift */; };
+		720D235C2375C2DB0006CD2C /* MainTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720D235A2375C2DB0006CD2C /* MainTabbarViewController.xib */; };
+		720D235E2375C7030006CD2C /* UserSurveysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D235D2375C7030006CD2C /* UserSurveysViewModel.swift */; };
+		720D23612375C92D0006CD2C /* SurveyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D23602375C92D0006CD2C /* SurveyDetailViewModel.swift */; };
+		720D23642375CA120006CD2C /* UserSurveyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D23622375CA120006CD2C /* UserSurveyViewCell.swift */; };
+		720D23652375CA120006CD2C /* UserSurveyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720D23632375CA120006CD2C /* UserSurveyViewCell.xib */; };
+		720D23672375CA230006CD2C /* UserSurveyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D23662375CA230006CD2C /* UserSurveyCellViewModel.swift */; };
 		72109892237324290056EEA8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72109891237324290056EEA8 /* BaseViewController.swift */; };
 		72109894237324C60056EEA8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72109893237324C60056EEA8 /* HomeViewModel.swift */; };
 		7239D44E2373B79F000DA622 /* SurveyCategoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239D44D2373B79F000DA622 /* SurveyCategoryCellViewModel.swift */; };
@@ -79,6 +86,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		720D23592375C2DB0006CD2C /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		720D235A2375C2DB0006CD2C /* MainTabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabbarViewController.xib; sourceTree = "<group>"; };
+		720D235D2375C7030006CD2C /* UserSurveysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSurveysViewModel.swift; sourceTree = "<group>"; };
+		720D23602375C92D0006CD2C /* SurveyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDetailViewModel.swift; sourceTree = "<group>"; };
+		720D23622375CA120006CD2C /* UserSurveyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSurveyViewCell.swift; sourceTree = "<group>"; };
+		720D23632375CA120006CD2C /* UserSurveyViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserSurveyViewCell.xib; sourceTree = "<group>"; };
+		720D23662375CA230006CD2C /* UserSurveyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSurveyCellViewModel.swift; sourceTree = "<group>"; };
 		72109891237324290056EEA8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		72109893237324C60056EEA8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7239D44D2373B79F000DA622 /* SurveyCategoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCategoryCellViewModel.swift; sourceTree = "<group>"; };
@@ -164,6 +178,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720D23522375C05C0006CD2C /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				720D23592375C2DB0006CD2C /* MainTabbarViewController.swift */,
+				720D235A2375C2DB0006CD2C /* MainTabbarViewController.xib */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		720D235F2375C89E0006CD2C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				720D23622375CA120006CD2C /* UserSurveyViewCell.swift */,
+				720D23632375CA120006CD2C /* UserSurveyViewCell.xib */,
+				720D23662375CA230006CD2C /* UserSurveyCellViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		721098902373240E0056EEA8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +280,7 @@
 		729495792372C8F30053CC1A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				720D23522375C05C0006CD2C /* Tabbar */,
 				721098902373240E0056EEA8 /* Base */,
 				729495D42372D09F0053CC1A /* Settings */,
 				729495AE2372CE9C0053CC1A /* Users */,
@@ -370,6 +404,7 @@
 				729495B72372CF0C0053CC1A /* PreEndSurvey */,
 				729495AF2372CEC10053CC1A /* SurveyDetailViewController.swift */,
 				729495B02372CEC10053CC1A /* SurveyDetailViewController.xib */,
+				720D23602375C92D0006CD2C /* SurveyDetailViewModel.swift */,
 			);
 			path = SurveyDetail;
 			sourceTree = "<group>";
@@ -447,8 +482,10 @@
 		729495CF2372D0300053CC1A /* ModifySurveys */ = {
 			isa = PBXGroup;
 			children = (
+				720D235F2375C89E0006CD2C /* Cell */,
 				729495D02372D0820053CC1A /* UserSurveysViewController.swift */,
 				729495D12372D0820053CC1A /* UserSurveysViewController.xib */,
+				720D235D2375C7030006CD2C /* UserSurveysViewModel.swift */,
 			);
 			path = ModifySurveys;
 			sourceTree = "<group>";
@@ -565,6 +602,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				729495B62372CEE40053CC1A /* SurveySubmitNotifyViewController.xib in Resources */,
+				720D23652375CA120006CD2C /* UserSurveyViewCell.xib in Resources */,
 				729495CE2372CFEA0053CC1A /* CreateSurveyViewController.xib in Resources */,
 				729495BB2372CF2E0053CC1A /* PreEndingSurveyViewController.xib in Resources */,
 				7239D45E2373C72F000DA622 /* SurveysByCategoryViewCell.xib in Resources */,
@@ -577,6 +615,7 @@
 				729495942372CB9A0053CC1A /* HomeViewController.xib in Resources */,
 				729495C12372CF780053CC1A /* UserInformationViewController.xib in Resources */,
 				7294954F2372C5C50053CC1A /* Assets.xcassets in Resources */,
+				720D235C2375C2DB0006CD2C /* MainTabbarViewController.xib in Resources */,
 				729495782372C7440053CC1A /* WelcomeViewController.xib in Resources */,
 				729495C52372CF850053CC1A /* ChangePasswordViewController.xib in Resources */,
 				729495B22372CEC10053CC1A /* SurveyDetailViewController.xib in Resources */,
@@ -609,10 +648,13 @@
 				729495A42372CD990053CC1A /* SendComments.swift in Sources */,
 				729495A22372CD7A0053CC1A /* ImageEvidenceUIView.swift in Sources */,
 				729495BA2372CF2E0053CC1A /* PreEndingSurveyViewController.swift in Sources */,
+				720D23642375CA120006CD2C /* UserSurveyViewCell.swift in Sources */,
+				720D235E2375C7030006CD2C /* UserSurveysViewModel.swift in Sources */,
 				72109892237324290056EEA8 /* BaseViewController.swift in Sources */,
 				729495462372C5C30053CC1A /* AppDelegate.swift in Sources */,
 				729495A02372CCFC0053CC1A /* RateDragVerticalUIView.swift in Sources */,
 				7239D44E2373B79F000DA622 /* SurveyCategoryCellViewModel.swift in Sources */,
+				720D23612375C92D0006CD2C /* SurveyDetailViewModel.swift in Sources */,
 				729495D22372D0820053CC1A /* UserSurveysViewController.swift in Sources */,
 				7294959E2372CCDE0053CC1A /* RateDragHorizonUIView.swift in Sources */,
 				7294959C2372CCB90053CC1A /* MultipleChoiceUIView.swift in Sources */,
@@ -628,6 +670,7 @@
 				7294958E2372CB630053CC1A /* LoginViewController.swift in Sources */,
 				7239D4572373C666000DA622 /* SurveysByCategoryViewModel.swift in Sources */,
 				729495B52372CEE40053CC1A /* SurveySubmitNotifyViewController.swift in Sources */,
+				720D235B2375C2DB0006CD2C /* MainTabbarViewController.swift in Sources */,
 				729495932372CB9A0053CC1A /* HomeViewController.swift in Sources */,
 				729495B12372CEC10053CC1A /* SurveyDetailViewController.swift in Sources */,
 				729495842372CA1F0053CC1A /* APIAndData.swift in Sources */,
@@ -637,6 +680,7 @@
 				729495CD2372CFEA0053CC1A /* CreateSurveyViewController.swift in Sources */,
 				729495882372CA640053CC1A /* APIRequest.swift in Sources */,
 				729495AC2372CE7A0053CC1A /* SurveyInformationTableViewCell.swift in Sources */,
+				720D23672375CA230006CD2C /* UserSurveyCellViewModel.swift in Sources */,
 				729495772372C7440053CC1A /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,8 +20,6 @@ class LoginViewController: BaseViewController {
     }
 
     @IBAction func checkLoginButtonClick(_ sender: UIButton) {
-        let homeView = HomeViewController()
-        homeView.viewModel = HomeViewModel()
-        navigationController?.pushViewController(homeView, animated: true)
+        AppDelegate.shared.window?.rootViewController = MainTabbarViewController()
     }
 }

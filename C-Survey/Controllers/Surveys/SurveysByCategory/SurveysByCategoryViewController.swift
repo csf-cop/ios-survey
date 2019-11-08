@@ -17,6 +17,7 @@ class SurveysByCategoryViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "Surveys in category"
     }
     
     override func settingData() {
@@ -48,6 +49,8 @@ extension SurveysByCategoryViewController: UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Click to Survey at: \(indexPath.row)")
+        let surveyDetailController = SurveyDetailViewController()
+        surveyDetailController.viewModel = SurveyDetailViewModel()
+        navigationController?.pushViewController(surveyDetailController, animated: true)
     }
 }

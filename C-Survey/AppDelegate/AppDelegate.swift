@@ -15,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var mask: CALayer?
     var imageView: UIImageView?
 
+    static let shared: AppDelegate = {
+        guard let shared = UIApplication.shared.delegate as? AppDelegate else {
+            fatalError("Cannot cast UIApplication.shared.delegate to AppDelegate.")
+        }
+        return shared
+    }()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         

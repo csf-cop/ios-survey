@@ -33,3 +33,17 @@ enum SurveysCategoryType {
         }
     }
 }
+
+enum UserSurveys {
+    case cell
+    case nib
+    case header
+    
+    var name: String {
+        switch self {
+        case .cell: return "UserSurveyCell"
+        case .nib: return "UserSurveyViewCell"
+        case .header: return "UserSurveyCellHeader"
+        }
+    }
+}

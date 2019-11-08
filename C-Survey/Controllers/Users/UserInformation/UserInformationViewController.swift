@@ -14,6 +14,7 @@ class UserInformationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "User information"
     }
 
 
