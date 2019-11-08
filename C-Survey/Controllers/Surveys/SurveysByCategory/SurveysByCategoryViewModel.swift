@@ -36,4 +36,8 @@ class SurveysByCategoryViewModel {
         cellModel.displayValue = surveys[index.row]
         return cellModel
     }
+    
+    func removeAt(index: IndexPath) {
+        surveys.remove(at: index.row)
+    }
 }

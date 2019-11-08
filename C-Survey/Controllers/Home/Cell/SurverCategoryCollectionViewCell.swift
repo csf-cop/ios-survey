@@ -31,7 +31,6 @@ class SurverCategoryCollectionViewCell: UICollectionViewCell {
     }
 
     @IBAction func showCategoryDetailButtonClick(_ sender: UIButton) {
-        print("Click to cell.")
         delegate?.clickToCategory(view: self, value: cellIndex)
     }
     

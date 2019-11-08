@@ -46,4 +46,8 @@ extension SurveysByCategoryViewController: UITableViewDataSource, UITableViewDel
         guard let viewModel = viewModel else { return 0 }
         return viewModel.numberOfSections()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Click to Survey at: \(indexPath.row)")
+    }
 }
