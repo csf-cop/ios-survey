@@ -10,9 +10,9 @@ import UIKit
 
 class UserSurveyViewCell: UITableViewCell {
 
+    @IBOutlet weak var displayValueLabel: UILabel!
     var viewModel: UserSurveyCellViewModel? {
         didSet {
-            print("Setting to user survey.")
         }
     }
 

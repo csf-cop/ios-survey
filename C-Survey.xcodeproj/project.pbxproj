@@ -380,7 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				7239D4512373C5F3000DA622 /* SurveysByCategory */,
-				729495CF2372D0300053CC1A /* ModifySurveys */,
+				729495CF2372D0300053CC1A /* UserSurveys */,
 				729495CA2372CFCF0053CC1A /* CreateSurvey */,
 				729495972372CC0E0053CC1A /* SurveyDetail */,
 			);
@@ -479,7 +479,7 @@
 			path = CreateSurvey;
 			sourceTree = "<group>";
 		};
-		729495CF2372D0300053CC1A /* ModifySurveys */ = {
+		729495CF2372D0300053CC1A /* UserSurveys */ = {
 			isa = PBXGroup;
 			children = (
 				720D235F2375C89E0006CD2C /* Cell */,
@@ -487,7 +487,7 @@
 				729495D12372D0820053CC1A /* UserSurveysViewController.xib */,
 				720D235D2375C7030006CD2C /* UserSurveysViewModel.swift */,
 			);
-			path = ModifySurveys;
+			path = UserSurveys;
 			sourceTree = "<group>";
 		};
 		729495D42372D09F0053CC1A /* Settings */ = {

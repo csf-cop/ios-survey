@@ -40,4 +40,8 @@ class UserSurveysViewModel {
     func getHeader(at: Int) -> String? {
         return indexs[at]
     }
+    
+    func removeAt(at: IndexPath) {
+        data[at.section].remove(at: at.row)
+    }
 }
