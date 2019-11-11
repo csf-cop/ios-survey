@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6A5E99F86B62B5ED7F0D05 /* Pods_C_SurveyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF929A6F97766888C922B226 /* Pods_C_SurveyTests.framework */; };
+		720B7B5A23795CDC00729E09 /* RepeatDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B7B5923795CDC00729E09 /* RepeatDomain.swift */; };
 		720D235B2375C2DB0006CD2C /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D23592375C2DB0006CD2C /* MainTabbarViewController.swift */; };
 		720D235C2375C2DB0006CD2C /* MainTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720D235A2375C2DB0006CD2C /* MainTabbarViewController.xib */; };
 		720D235E2375C7030006CD2C /* UserSurveysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D235D2375C7030006CD2C /* UserSurveysViewModel.swift */; };
@@ -66,6 +68,12 @@
 		729495CE2372CFEA0053CC1A /* CreateSurveyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 729495CC2372CFEA0053CC1A /* CreateSurveyViewController.xib */; };
 		729495D22372D0820053CC1A /* UserSurveysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729495D02372D0820053CC1A /* UserSurveysViewController.swift */; };
 		729495D32372D0820053CC1A /* UserSurveysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 729495D12372D0820053CC1A /* UserSurveysViewController.xib */; };
+		7296C53A237942620055043A /* QuestionDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7296C539237942620055043A /* QuestionDomain.swift */; };
+		7296C53E23794C460055043A /* response_question.json in Resources */ = {isa = PBXBuildFile; fileRef = 7296C53C23794C460055043A /* response_question.json */; };
+		7296C53F23794C460055043A /* response_question.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7296C53D23794C460055043A /* response_question.xml */; };
+		7296C5412379585E0055043A /* AnswerDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7296C5402379585E0055043A /* AnswerDomain.swift */; };
+		BF957AC136DC82DA31691AA3 /* Pods_C_Survey_C_SurveyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A472CB2862EB48AD0FA8AC00 /* Pods_C_Survey_C_SurveyUITests.framework */; };
+		F61ECBCF86775AA756BC83FD /* Pods_C_Survey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B29CD26A4598F64D2245A7 /* Pods_C_Survey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +94,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B3CCE4D0AA00A57E9A9219E /* Pods-C-SurveyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-SurveyTests.debug.xcconfig"; path = "Target Support Files/Pods-C-SurveyTests/Pods-C-SurveyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BEA9A1CB03E8E225FA1B24A /* Pods-C-Survey-C-SurveyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-Survey-C-SurveyUITests.debug.xcconfig"; path = "Target Support Files/Pods-C-Survey-C-SurveyUITests/Pods-C-Survey-C-SurveyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DDA602656B6E443E9F1D09B /* Pods-C-Survey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-Survey.release.xcconfig"; path = "Target Support Files/Pods-C-Survey/Pods-C-Survey.release.xcconfig"; sourceTree = "<group>"; };
+		720B7B5923795CDC00729E09 /* RepeatDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatDomain.swift; sourceTree = "<group>"; };
 		720D23592375C2DB0006CD2C /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		720D235A2375C2DB0006CD2C /* MainTabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabbarViewController.xib; sourceTree = "<group>"; };
 		720D235D2375C7030006CD2C /* UserSurveysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSurveysViewModel.swift; sourceTree = "<group>"; };
@@ -151,6 +163,16 @@
 		729495CC2372CFEA0053CC1A /* CreateSurveyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateSurveyViewController.xib; sourceTree = "<group>"; };
 		729495D02372D0820053CC1A /* UserSurveysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSurveysViewController.swift; sourceTree = "<group>"; };
 		729495D12372D0820053CC1A /* UserSurveysViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserSurveysViewController.xib; sourceTree = "<group>"; };
+		7296C539237942620055043A /* QuestionDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDomain.swift; sourceTree = "<group>"; };
+		7296C53C23794C460055043A /* response_question.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response_question.json; sourceTree = "<group>"; };
+		7296C53D23794C460055043A /* response_question.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = response_question.xml; sourceTree = "<group>"; };
+		7296C5402379585E0055043A /* AnswerDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerDomain.swift; sourceTree = "<group>"; };
+		9427A2D376707FBA82C136D9 /* Pods-C-Survey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-Survey.debug.xcconfig"; path = "Target Support Files/Pods-C-Survey/Pods-C-Survey.debug.xcconfig"; sourceTree = "<group>"; };
+		A472CB2862EB48AD0FA8AC00 /* Pods_C_Survey_C_SurveyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C_Survey_C_SurveyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C33816A52DCCAA2F1828ADF9 /* Pods-C-SurveyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-SurveyTests.release.xcconfig"; path = "Target Support Files/Pods-C-SurveyTests/Pods-C-SurveyTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8B29CD26A4598F64D2245A7 /* Pods_C_Survey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C_Survey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9863CF7C71DF097547901DB /* Pods-C-Survey-C-SurveyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-Survey-C-SurveyUITests.release.xcconfig"; path = "Target Support Files/Pods-C-Survey-C-SurveyUITests/Pods-C-Survey-C-SurveyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DF929A6F97766888C922B226 /* Pods_C_SurveyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C_SurveyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F61ECBCF86775AA756BC83FD /* Pods_C_Survey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6A5E99F86B62B5ED7F0D05 /* Pods_C_SurveyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF957AC136DC82DA31691AA3 /* Pods_C_Survey_C_SurveyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +259,8 @@
 				7294955B2372C5C60053CC1A /* C-SurveyTests */,
 				729495662372C5C60053CC1A /* C-SurveyUITests */,
 				729495432372C5C30053CC1A /* Products */,
+				C4EB2D14D694CA37FF1A607A /* Pods */,
+				FBED59C0EA4F1DA814823D23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,6 +322,7 @@
 		7294957A2372C8FA0053CC1A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7296C537237941860055043A /* dummy */,
 				7294957F2372C9BA0053CC1A /* API */,
 				7294957E2372C9B50053CC1A /* Entities */,
 			);
@@ -337,6 +365,7 @@
 		7294957F2372C9BA0053CC1A /* API */ = {
 			isa = PBXGroup;
 			children = (
+				7296C5382379424B0055043A /* Questions */,
 				729495802372C9C40053CC1A /* Core */,
 				729495892372CA950053CC1A /* API.Downloader.swift */,
 				729495C62372CFAE0053CC1A /* API.Users.swift */,
@@ -497,6 +526,48 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		7296C537237941860055043A /* dummy */ = {
+			isa = PBXGroup;
+			children = (
+				7296C53C23794C460055043A /* response_question.json */,
+				7296C53D23794C460055043A /* response_question.xml */,
+			);
+			path = dummy;
+			sourceTree = "<group>";
+		};
+		7296C5382379424B0055043A /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				7296C539237942620055043A /* QuestionDomain.swift */,
+				7296C5402379585E0055043A /* AnswerDomain.swift */,
+				720B7B5923795CDC00729E09 /* RepeatDomain.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		C4EB2D14D694CA37FF1A607A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9427A2D376707FBA82C136D9 /* Pods-C-Survey.debug.xcconfig */,
+				4DDA602656B6E443E9F1D09B /* Pods-C-Survey.release.xcconfig */,
+				4BEA9A1CB03E8E225FA1B24A /* Pods-C-Survey-C-SurveyUITests.debug.xcconfig */,
+				D9863CF7C71DF097547901DB /* Pods-C-Survey-C-SurveyUITests.release.xcconfig */,
+				1B3CCE4D0AA00A57E9A9219E /* Pods-C-SurveyTests.debug.xcconfig */,
+				C33816A52DCCAA2F1828ADF9 /* Pods-C-SurveyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FBED59C0EA4F1DA814823D23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8B29CD26A4598F64D2245A7 /* Pods_C_Survey.framework */,
+				A472CB2862EB48AD0FA8AC00 /* Pods_C_Survey_C_SurveyUITests.framework */,
+				DF929A6F97766888C922B226 /* Pods_C_SurveyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -504,9 +575,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7294956C2372C5C60053CC1A /* Build configuration list for PBXNativeTarget "C-Survey" */;
 			buildPhases = (
+				AF95C3898A6F54AACFB39705 /* [CP] Check Pods Manifest.lock */,
 				7294953E2372C5C30053CC1A /* Sources */,
 				7294953F2372C5C30053CC1A /* Frameworks */,
 				729495402372C5C30053CC1A /* Resources */,
+				A0662F19FC98479B9E9F1483 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -521,6 +594,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7294956F2372C5C60053CC1A /* Build configuration list for PBXNativeTarget "C-SurveyTests" */;
 			buildPhases = (
+				7F1E082AB5793B8456D7A5B9 /* [CP] Check Pods Manifest.lock */,
 				729495542372C5C60053CC1A /* Sources */,
 				729495552372C5C60053CC1A /* Frameworks */,
 				729495562372C5C60053CC1A /* Resources */,
@@ -539,9 +613,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 729495722372C5C60053CC1A /* Build configuration list for PBXNativeTarget "C-SurveyUITests" */;
 			buildPhases = (
+				FBC5700ED76B1057FC714EA6 /* [CP] Check Pods Manifest.lock */,
 				7294955F2372C5C60053CC1A /* Sources */,
 				729495602372C5C60053CC1A /* Frameworks */,
 				729495612372C5C60053CC1A /* Resources */,
+				CF2FE3C0A21B3F2BAFE2C79B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -607,6 +683,8 @@
 				729495BB2372CF2E0053CC1A /* PreEndingSurveyViewController.xib in Resources */,
 				7239D45E2373C72F000DA622 /* SurveysByCategoryViewCell.xib in Resources */,
 				729495D32372D0820053CC1A /* UserSurveysViewController.xib in Resources */,
+				7296C53F23794C460055043A /* response_question.xml in Resources */,
+				7296C53E23794C460055043A /* response_question.json in Resources */,
 				729495AD2372CE7A0053CC1A /* SurveyInformationTableViewCell.xib in Resources */,
 				7294958F2372CB630053CC1A /* LoginViewController.xib in Resources */,
 				7239D4552373C610000DA622 /* SurveysByCategoryViewController.xib in Resources */,
@@ -638,6 +716,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F1E082AB5793B8456D7A5B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-C-SurveyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0662F19FC98479B9E9F1483 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-C-Survey/Pods-C-Survey-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-C-Survey/Pods-C-Survey-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-C-Survey/Pods-C-Survey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF95C3898A6F54AACFB39705 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-C-Survey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF2FE3C0A21B3F2BAFE2C79B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-C-Survey-C-SurveyUITests/Pods-C-Survey-C-SurveyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-C-Survey-C-SurveyUITests/Pods-C-Survey-C-SurveyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-C-Survey-C-SurveyUITests/Pods-C-Survey-C-SurveyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC5700ED76B1057FC714EA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-C-Survey-C-SurveyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7294953E2372C5C30053CC1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -650,6 +831,7 @@
 				729495BA2372CF2E0053CC1A /* PreEndingSurveyViewController.swift in Sources */,
 				720D23642375CA120006CD2C /* UserSurveyViewCell.swift in Sources */,
 				720D235E2375C7030006CD2C /* UserSurveysViewModel.swift in Sources */,
+				7296C53A237942620055043A /* QuestionDomain.swift in Sources */,
 				72109892237324290056EEA8 /* BaseViewController.swift in Sources */,
 				729495462372C5C30053CC1A /* AppDelegate.swift in Sources */,
 				729495A02372CCFC0053CC1A /* RateDragVerticalUIView.swift in Sources */,
@@ -664,6 +846,7 @@
 				729495822372CA030053CC1A /* API.swift in Sources */,
 				7239D45D2373C72F000DA622 /* SurveysByCategoryViewCell.swift in Sources */,
 				729495862372CA470053CC1A /* ApiManager.swift in Sources */,
+				720B7B5A23795CDC00729E09 /* RepeatDomain.swift in Sources */,
 				729495C42372CF850053CC1A /* ChangePasswordViewController.swift in Sources */,
 				729495C72372CFAE0053CC1A /* API.Users.swift in Sources */,
 				7294958A2372CA950053CC1A /* API.Downloader.swift in Sources */,
@@ -673,6 +856,7 @@
 				720D235B2375C2DB0006CD2C /* MainTabbarViewController.swift in Sources */,
 				729495932372CB9A0053CC1A /* HomeViewController.swift in Sources */,
 				729495B12372CEC10053CC1A /* SurveyDetailViewController.swift in Sources */,
+				7296C5412379585E0055043A /* AnswerDomain.swift in Sources */,
 				729495842372CA1F0053CC1A /* APIAndData.swift in Sources */,
 				729495A82372CE4E0053CC1A /* SurverCategoryCollectionViewCell.swift in Sources */,
 				7239D4622373EE1D000DA622 /* BaseIdentity.swift in Sources */,
@@ -844,6 +1028,7 @@
 		};
 		7294956D2372C5C60053CC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9427A2D376707FBA82C136D9 /* Pods-C-Survey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -863,6 +1048,7 @@
 		};
 		7294956E2372C5C60053CC1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DDA602656B6E443E9F1D09B /* Pods-C-Survey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -882,6 +1068,7 @@
 		};
 		729495702372C5C60053CC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B3CCE4D0AA00A57E9A9219E /* Pods-C-SurveyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -904,6 +1091,7 @@
 		};
 		729495712372C5C60053CC1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C33816A52DCCAA2F1828ADF9 /* Pods-C-SurveyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -926,6 +1114,7 @@
 		};
 		729495732372C5C60053CC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BEA9A1CB03E8E225FA1B24A /* Pods-C-Survey-C-SurveyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -946,6 +1135,7 @@
 		};
 		729495742372C5C60053CC1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9863CF7C71DF097547901DB /* Pods-C-Survey-C-SurveyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

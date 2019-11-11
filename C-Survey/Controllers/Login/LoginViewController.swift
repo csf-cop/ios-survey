@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ObjectMapper
 
 class LoginViewController: BaseViewController {
 
@@ -20,6 +21,39 @@ class LoginViewController: BaseViewController {
     }
 
     @IBAction func checkLoginButtonClick(_ sender: UIButton) {
-        AppDelegate.shared.window?.rootViewController = MainTabbarViewController()
+        // MARK: Move to Main page.
+        // AppDelegate.shared.window?.rootViewController = MainTabbarViewController()
+        
+        
+        // MARK: Run test demo convert json response data to Object.
+        let jsonFile = "response_question.json"
+        loadDataFromJsonFile(file: jsonFile)
+    }
+    
+    func loadDataFromJsonFile(file: String) {
+        if let path = Bundle.main.path(forResource: "response_question", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+
+                if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                    print("Have json Object")
+                    if let jsonData = jsonResult["data"] as? [String: Any] {
+                        print("have json data.")
+                        if let questions = jsonData["questions"] as? [[String: Any]] {
+                            print("have questions data.")
+                            let dataQuestion = Mapper<QuestionDomain>().mapArray(JSONArray: questions)
+                            for index in dataQuestion {
+                                print("Number if answer: \(index.answers.count)")
+                                print("repeat: \(index.repeat_status)")
+                            }
+                        }
+                    }
+                }
+                // Cast to object.
+            } catch {
+               // handle error
+            }
+        }
     }
 }
