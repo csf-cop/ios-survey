@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SurveyDetailViewController" customModule="C_Survey" customModuleProvider="target">
             <connections>
+                <outlet property="backQuestionButton" destination="tJ8-TM-5MC" id="v6X-Gm-H2u"/>
+                <outlet property="nextQuestionButton" destination="xLY-5F-tQ7" id="0SA-oO-KiS"/>
+                <outlet property="questionNumberControl" destination="T4E-dd-p5w" id="WGN-r4-ccn"/>
+                <outlet property="questionsCollectionView" destination="Gki-Vq-ld0" id="Gsg-p2-gpH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,38 +22,69 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLY-5F-tQ7">
-                    <rect key="frame" x="0.0" y="812" width="414" height="50"/>
-                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="cLC-fg-gDT"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                    <state key="normal" title="Start">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                </button>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="T4E-dd-p5w">
                     <rect key="frame" x="0.0" y="44" width="414" height="37"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </pageControl>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7Z-tM-gwO">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Gki-Vq-ld0">
                     <rect key="frame" x="0.0" y="81" width="414" height="731"/>
-                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </view>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5E1-3G-IaO">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2Se-10-DVj">
+                    <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJ8-TM-5MC">
+                            <rect key="frame" x="0.0" y="0.0" width="204.5" height="50"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="FB0-iK-Vea"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Back">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="previousQuestionButtonClick:" destination="-1" eventType="touchUpInside" id="0Lv-Hi-t4v"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLY-5F-tQ7">
+                            <rect key="frame" x="209.5" y="0.0" width="204.5" height="50"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="cLC-fg-gDT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Start">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="nextQuestionButtonClick:" destination="-1" eventType="touchUpInside" id="tqC-75-nnE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xLY-5F-tQ7" firstAttribute="width" secondItem="tJ8-TM-5MC" secondAttribute="width" id="dgh-iR-wVa"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="A7Z-tM-gwO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1sI-Ss-0XD"/>
-                <constraint firstItem="A7Z-tM-gwO" firstAttribute="top" secondItem="T4E-dd-p5w" secondAttribute="bottom" id="AOa-Df-2Hx"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xLY-5F-tQ7" secondAttribute="bottom" id="CqO-Uy-Kue"/>
-                <constraint firstItem="A7Z-tM-gwO" firstAttribute="centerX" secondItem="xLY-5F-tQ7" secondAttribute="centerX" id="D1x-gY-dB2"/>
-                <constraint firstItem="xLY-5F-tQ7" firstAttribute="top" secondItem="A7Z-tM-gwO" secondAttribute="bottom" id="SWR-em-2e4"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xLY-5F-tQ7" secondAttribute="trailing" id="ZlP-Bh-Wej"/>
+                <constraint firstItem="Gki-Vq-ld0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="49G-Mu-mwl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2Se-10-DVj" secondAttribute="trailing" id="6re-Bo-vAu"/>
+                <constraint firstItem="T4E-dd-p5w" firstAttribute="trailing" secondItem="Gki-Vq-ld0" secondAttribute="trailing" id="Xbt-JB-CS3"/>
+                <constraint firstItem="2Se-10-DVj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="b27-o9-kKO"/>
                 <constraint firstItem="T4E-dd-p5w" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="e1V-do-078"/>
-                <constraint firstItem="A7Z-tM-gwO" firstAttribute="leading" secondItem="T4E-dd-p5w" secondAttribute="leading" id="h9D-6l-vIr"/>
-                <constraint firstItem="xLY-5F-tQ7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iB8-gq-bJO"/>
-                <constraint firstItem="A7Z-tM-gwO" firstAttribute="trailing" secondItem="T4E-dd-p5w" secondAttribute="trailing" id="xOE-jd-m8T"/>
+                <constraint firstItem="T4E-dd-p5w" firstAttribute="leading" secondItem="Gki-Vq-ld0" secondAttribute="leading" id="fUc-ZP-TdQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gki-Vq-ld0" secondAttribute="trailing" id="k2M-us-7I1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2Se-10-DVj" secondAttribute="bottom" id="kDF-kg-FKl"/>
+                <constraint firstItem="Gki-Vq-ld0" firstAttribute="top" secondItem="T4E-dd-p5w" secondAttribute="bottom" id="zJ2-Nh-X9J"/>
+                <constraint firstItem="2Se-10-DVj" firstAttribute="top" secondItem="Gki-Vq-ld0" secondAttribute="bottom" id="zd4-nj-VV6"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>

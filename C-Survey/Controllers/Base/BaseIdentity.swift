@@ -47,3 +47,15 @@ enum UserSurveys {
         }
     }
 }
+
+enum SurveyDetail {
+    case cell
+    case nib
+    
+    var name: String {
+        switch self {
+        case .cell: return "SurveyDetailCell"
+        case .nib: return "SurveyDetailViewCell"
+        }
+    }
+}

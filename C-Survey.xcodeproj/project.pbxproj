@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A6A5E99F86B62B5ED7F0D05 /* Pods_C_SurveyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF929A6F97766888C922B226 /* Pods_C_SurveyTests.framework */; };
+		720310BF237A88DB0039EEE1 /* SingleSelectUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720310BE237A88DB0039EEE1 /* SingleSelectUIView.xib */; };
+		720310C1237A89370039EEE1 /* MultipleChoiceUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720310C0237A89370039EEE1 /* MultipleChoiceUIView.xib */; };
 		720B7B5A23795CDC00729E09 /* RepeatDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B7B5923795CDC00729E09 /* RepeatDomain.swift */; };
 		720D235B2375C2DB0006CD2C /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D23592375C2DB0006CD2C /* MainTabbarViewController.swift */; };
 		720D235C2375C2DB0006CD2C /* MainTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720D235A2375C2DB0006CD2C /* MainTabbarViewController.xib */; };
@@ -97,6 +99,8 @@
 		1B3CCE4D0AA00A57E9A9219E /* Pods-C-SurveyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-SurveyTests.debug.xcconfig"; path = "Target Support Files/Pods-C-SurveyTests/Pods-C-SurveyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4BEA9A1CB03E8E225FA1B24A /* Pods-C-Survey-C-SurveyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-Survey-C-SurveyUITests.debug.xcconfig"; path = "Target Support Files/Pods-C-Survey-C-SurveyUITests/Pods-C-Survey-C-SurveyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4DDA602656B6E443E9F1D09B /* Pods-C-Survey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-Survey.release.xcconfig"; path = "Target Support Files/Pods-C-Survey/Pods-C-Survey.release.xcconfig"; sourceTree = "<group>"; };
+		720310BE237A88DB0039EEE1 /* SingleSelectUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleSelectUIView.xib; sourceTree = "<group>"; };
+		720310C0237A89370039EEE1 /* MultipleChoiceUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultipleChoiceUIView.xib; sourceTree = "<group>"; };
 		720B7B5923795CDC00729E09 /* RepeatDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatDomain.swift; sourceTree = "<group>"; };
 		720D23592375C2DB0006CD2C /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		720D235A2375C2DB0006CD2C /* MainTabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabbarViewController.xib; sourceTree = "<group>"; };
@@ -443,10 +447,12 @@
 			children = (
 				729495A12372CD7A0053CC1A /* ImageEvidenceUIView.swift */,
 				7294959B2372CCB90053CC1A /* MultipleChoiceUIView.swift */,
+				720310C0237A89370039EEE1 /* MultipleChoiceUIView.xib */,
 				7294959D2372CCDE0053CC1A /* RateDragHorizonUIView.swift */,
 				7294959F2372CCFC0053CC1A /* RateDragVerticalUIView.swift */,
 				729495A32372CD990053CC1A /* SendComments.swift */,
 				729495992372CCA30053CC1A /* SingleSelectUIView.swift */,
+				720310BE237A88DB0039EEE1 /* SingleSelectUIView.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -678,6 +684,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				729495B62372CEE40053CC1A /* SurveySubmitNotifyViewController.xib in Resources */,
+				720310BF237A88DB0039EEE1 /* SingleSelectUIView.xib in Resources */,
 				720D23652375CA120006CD2C /* UserSurveyViewCell.xib in Resources */,
 				729495CE2372CFEA0053CC1A /* CreateSurveyViewController.xib in Resources */,
 				729495BB2372CF2E0053CC1A /* PreEndingSurveyViewController.xib in Resources */,
@@ -687,6 +694,7 @@
 				7296C53E23794C460055043A /* response_question.json in Resources */,
 				729495AD2372CE7A0053CC1A /* SurveyInformationTableViewCell.xib in Resources */,
 				7294958F2372CB630053CC1A /* LoginViewController.xib in Resources */,
+				720310C1237A89370039EEE1 /* MultipleChoiceUIView.xib in Resources */,
 				7239D4552373C610000DA622 /* SurveysByCategoryViewController.xib in Resources */,
 				729495A92372CE4E0053CC1A /* SurverCategoryCollectionViewCell.xib in Resources */,
 				729495522372C5C50053CC1A /* LaunchScreen.storyboard in Resources */,

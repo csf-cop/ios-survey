@@ -24,16 +24,15 @@ class QuestionDomain : Mappable {
     required convenience init?(map: Map) {
         self.init()
     }
-    
-    convenience init(dic: JSON) {
-        var schema: [String: Any] = [:]
-        self.init(dic: schema)
-    }
 
     func mapping(map: Map) {
         question_id <- map["question_id"]
         question_type <- map["question_type"]
         content <- map["content"]
+        explanation <- map["explanation"]
         answers <- map["answers"]
+        prev_question <- map["prev_question"]
+        next_question <- map["next_question"]
+        repeat_status <- map["repeat"]
     }
 }
