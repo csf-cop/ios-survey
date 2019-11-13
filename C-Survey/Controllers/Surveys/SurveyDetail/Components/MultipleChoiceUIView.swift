@@ -10,12 +10,13 @@ import UIKit
 
 class MultipleChoiceUIView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    func getAnswer() -> [String] {
+        return ["test"]
     }
-    */
+}
 
+extension MultipleChoiceUIView: Question {
+    func getAnswer(visit: QuestionType) -> [String] {
+        return visit.getAnswer(for: self)
+    }
 }

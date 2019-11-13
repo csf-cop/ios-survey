@@ -31,7 +31,8 @@ class SurveyDetailViewController: BaseViewController {
     }
     
     override func settingData() {
-        questionsCollectionView.register(UIView.self, forCellWithReuseIdentifier: SurveyDetail.cell.name)
+        let nib = UINib(nibName: SurveyDetail.nib.name, bundle: nil)
+        questionsCollectionView.register(nib, forCellWithReuseIdentifier: SurveyDetail.cell.name)
         questionsCollectionView.dataSource = self
         questionsCollectionView.delegate = self
     }
@@ -48,6 +49,9 @@ class SurveyDetailViewController: BaseViewController {
     @IBAction func nextQuestionButtonClick(_ sender: UIButton) {
         print("Next question.")
         if (startPosition < totalQuestions - 1) {
+            
+            // Get current answer.
+            
             startPosition += 1
             let indexPath = IndexPath(item: startPosition, section: 0)
             questionsCollectionView.scrollToItem(at: indexPath, at: .right, animated: true)
@@ -65,20 +69,28 @@ extension SurveyDetailViewController: UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SurveyDetail.cell.name, for: indexPath) as? UIView else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SurveyDetail.cell.name, for: indexPath) as? SurveyDetailViewCell else {
             return UICollectionViewCell()
         }
-        cell.backgroundColor = .green
-        
-//        let label = UILabel(frame: CGRect(x: 0, y: 0, width: cell.contentView.frame.width, height: cell.contentView.frame.height))
-//        label.text = String(indexPath.row)
-//        label.textAlignment = .center
-//        cell.contentView.addSubview(label)
-//        // Constrain label
-//        label.translatesAutoresizingMaskIntoConstraints = false
-//        label.centerXAnchor.constraint(equalTo: cell.centerXAnchor).isActive = true
-//        label.centerYAnchor.constraint(equalTo: cell.centerYAnchor).isActive = true
-        
+        if let cellView = cell.componentView {
+            // Reload data.
+            print("Don't need to create data for \(String(describing: type(of: cellView)))")
+        } else {
+            if indexPath.row % 2 == 0 {
+                // Set view if have no value.
+                guard let single = Bundle.main.loadNibNamed("SingleSelectUIView", owner: self, options: nil)?[0] as? SingleSelectUIView else {
+                    return cell
+                }
+                cell.componentView = single
+            } else {
+                // Set view if have no value.
+                guard let single = Bundle.main.loadNibNamed("MultipleChoiceUIView", owner: self, options: nil)?[0] as? MultipleChoiceUIView else {
+                    return cell
+                }
+                cell.componentView = single
+            }
+            
+        }
         return cell
     }
     

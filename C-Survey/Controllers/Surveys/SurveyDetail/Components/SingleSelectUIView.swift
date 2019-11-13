@@ -9,6 +9,7 @@
 import UIKit
 
 class SingleSelectUIView: UIView {
+    
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -18,4 +19,14 @@ class SingleSelectUIView: UIView {
     }
     */
 
+}
+
+extension SingleSelectUIView: QuestionType {
+    func getAnswer(for singleChoice: SingleSelectUIView) -> [String] {
+        return []
+    }
+    
+    func getAnswer(for multipleChoice: MultipleChoiceUIView) -> [String] {
+        return []
+    }
 }
