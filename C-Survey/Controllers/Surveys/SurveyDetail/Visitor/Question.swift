@@ -13,26 +13,24 @@ protocol Question {
 }
 
 protocol QuestionType {
-    func getAnswer(for singleChoice: SingleSelectUIView) -> [String]
+    func getAnswer(for singleChoice: SingleChoiceUIView) -> [String]
     func getAnswer(for multipleChoice: MultipleChoiceUIView) -> [String]
 }
 
 class QuestionTypeVisitor: QuestionType {
-    func getAnswer(for singleChoice: SingleSelectUIView) -> [String] {
-        return []
+    func getAnswer(for singleChoice: SingleChoiceUIView) -> [String] {
+        return singleChoice.getAnswer()
     }
     
     func getAnswer(for multipleChoice: MultipleChoiceUIView) -> [String] {
         return multipleChoice.getAnswer()
     }
     
-    func getAnswer(for singleChoice: SingleSelectUIView) {
+    func getAnswer(for singleChoice: SingleChoiceUIView) {
         
     }
     
     func getAnswer(for multipleChoice: MultipleChoiceUIView) {
         
     }
-    
-    
 }

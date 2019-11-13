@@ -78,7 +78,7 @@ extension SurveyDetailViewController: UICollectionViewDataSource, UICollectionVi
         } else {
             if indexPath.row % 2 == 0 {
                 // Set view if have no value.
-                guard let single = Bundle.main.loadNibNamed("SingleSelectUIView", owner: self, options: nil)?[0] as? SingleSelectUIView else {
+                guard let single = Bundle.main.loadNibNamed("SingleChoiceUIView", owner: self, options: nil)?[0] as? SingleChoiceUIView else {
                     return cell
                 }
                 cell.componentView = single

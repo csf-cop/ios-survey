@@ -59,3 +59,18 @@ enum SurveyDetail {
         }
     }
 }
+enum CustomNibView {
+    case addSingle
+    case addMultiple
+    case singleDetail
+    case multipleDetail
+    
+    var name: String {
+        switch self {
+        case .addSingle: return "SingleChoiceQuestion"
+        case .addMultiple: return ""
+        case .singleDetail: return "SingleChoiceUIView"
+        case .multipleDetail: return "MultipleChoiceUIView"
+        }
+    }
+}
