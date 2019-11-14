@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserSurveysViewController" customModule="C_Survey" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteButton" destination="575-1W-XNw" id="JVY-g9-MRK"/>
+                <outlet property="userSurveysTableView" destination="WB9-E8-YNe" id="1Kd-aO-mKi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WB9-E8-YNe">
+                    <rect key="frame" x="0.0" y="44" width="414" height="766"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="766" id="4X3-8J-fOb"/>
+                    </constraints>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="575-1W-XNw">
+                    <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="2rg-cv-0k0"/>
+                        <constraint firstAttribute="height" constant="50" id="dMm-kP-6dc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="Delete">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteSurveyButtonClick:" destination="-1" eventType="touchUpInside" id="8xn-k5-M9v"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="575-1W-XNw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Mgc-IV-eqi"/>
+                <constraint firstItem="575-1W-XNw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Mxl-zQ-KeD"/>
+                <constraint firstItem="WB9-E8-YNe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="XHi-xt-L3S"/>
+                <constraint firstItem="WB9-E8-YNe" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZzR-Fa-KPo"/>
+                <constraint firstItem="575-1W-XNw" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="e5i-QU-QoY"/>
+                <constraint firstItem="WB9-E8-YNe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="i60-Av-ecS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
+        </view>
+    </objects>
+</document>

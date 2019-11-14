@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Survey>
+    <questions id="1">
+        <type>Question</type>
+        <content>What type of vehicle did you purchase?</content>
+        <explain>Pick your choice</explain>
+        <answers id="11">
+            <Content>Car</Content>
+            <Value>Car</Value>
+            <QuestionRuleId>2</QuestionRuleId>
+        </answers>
+        <answers id="12">
+            <Content>Truck</Content>
+            <Value>Truck</Value>
+            <QuestionRuleId>3</QuestionRuleId>
+        </answers>
+        <answers id="13">
+            <Content>SUV</Content>
+            <Value>SUV</Value>
+            <QuestionRuleId>4</QuestionRuleId>
+        </answers>
+        <next>6</next>
+    </questions>
+    <questions id="2">
+        <type>Question</type>
+        <content>What type of car?</content>
+        <answers id="21">
+            <Content>Sport Coupe</Content>
+            <Value>Sport Coupe</Value>
+        </answers>
+        <answers id="22">
+            <Content>Sedan</Content>
+            <Value>Sedan</Value>
+        </answers>
+        <previous>1</previous>
+        <next>6</next>
+    </questions>
+    <questions id="3">
+        <type>Question</type>
+        <content>What type of truck?</content>
+        <answers id="31">
+            <Content>Pickup</Content>
+            <Value>Pickup</Value>
+        </answers>
+        <answers id="32">
+            <Content>4x4</Content>
+            <Value>4x4</Value>
+        </answers>
+        <previous>1</previous>
+        <next>6</next>
+    </questions>
+    <questions id="4">
+        <type>Question</type>
+        <content>Which brand of SUV?</content>
+        <answers id="41">
+            <Content>Fore Runner</Content>
+            <Value>Fore Runner</Value>
+        </answers>
+        <answers id="42">
+            <Content>Passport</Content>
+            <Value>Passport</Value>
+        </answers>
+        <answers id="43">
+            <Content>Path Finder</Content>
+            <Value>Path Finder</Value>
+        </answers>
+        <answers id="44">
+            <Content>Other choice</Content>
+            <Value>Other</Value>
+            <QuestionRuleId>5</QuestionRuleId>
+        </answers>
+        <previous>1</previous>
+        <next>6</next>
+    </questions>
+    <questions id="5">
+        <type>Question</type>
+        <content>Which other choice?</content>
+        <explain>Let input your answer</explain>
+        <answers id="50">
+            <Content>It's my choice.</Content>
+        </answers>
+        <previous>1</previous>
+        <next>6</next>
+    </questions>
+    <questions id="6">
+        <type>Question</type>
+        <content>Which other choice?</content>
+        <explain>Let input your answer</explain>
+        <answers id="60">
+            <Content>Let comment to this survey.</Content>
+        </answers>
+        <previous>1</previous>
+    </questions>
+    <questions>
+        <type>EndSurvey</type>
+        <content>Thanks for join we survey.</content>
+    </questions>
+</Survey>

@@ -1,0 +1,133 @@
+{
+  "data": {
+    "questions": [
+      {
+        "question_id": "1",
+        "question_type": "Question",
+        "content": "What type of vehicle did you purchase?",
+        "explanation": "Pick your choice",
+        "answers": [
+          {
+            "answer_id": "11",
+            "answer_content": "Car",
+            "answer_value": "Car",
+            "answer_consequence": "2"
+          },
+          {
+            "answer_id": "12",
+            "answer_content": "Truck",
+            "answer_value": "Truck",
+            "answer_consequence": "3"
+          },
+          {
+            "answer_id": "13",
+            "answer_content": "SUV",
+            "answer_value": "SUV",
+            "answer_consequence": "4"
+          }
+        ],
+        "next_question": "6"
+      },
+      {
+        "question_id": "2",
+        "question_type": "Question",
+        "content": "What type of car?",
+        "answers": [
+          {
+            "answer_id": "21",
+            "answer_content": "Sport Coupe",
+            "answer_value": "Sport Coupe"
+          },
+          {
+            "answer_id": "22",
+            "answer_content": "Sedan",
+            "answer_value": "Sedan"
+          }
+        ],
+        "prev_question": "1",
+        "next_question": "6"
+      },
+      {
+        "question_id": "3",
+        "question_type": "Question",
+        "content": "What type of truck?",
+        "answers": [
+          {
+            "answer_id": "31",
+            "answer_content": "Pickup",
+            "answer_value": "Pickup"
+          },
+          {
+            "answer_id": "32",
+            "answer_content": "4x4",
+            "answer_value": "4x4"
+          }
+        ],
+        "prev_question": "1",
+        "next_question": "6"
+      },
+      {
+        "question_id": "4",
+        "question_type": "Question",
+        "content": "Which brand of SUV?",
+        "answers": [
+          {
+            "answer_id": "41",
+            "answer_content": "Fore Runner",
+            "answer_value": "Fore Runner"
+          },
+          {
+            "answer_id": "42",
+            "answer_content": "Passport",
+            "answer_value": "Passport"
+          },
+          {
+            "answer_id": "43",
+            "answer_content": "Path Finder",
+            "answer_value": "Path Finder"
+          },
+          {
+            "answer_id": "44",
+            "answer_content": "Other choice",
+            "answer_value": "Other",
+            "answer_consequence": "5"
+          }
+        ],
+        "prev_question": "1",
+        "next_question": "6"
+      },
+      {
+        "question_id": "5",
+        "question_type": "Question",
+        "content": "Which other choice?",
+        "explanation": "Let input your answer",
+        "answers": [
+          {
+            "answer_id": "50",
+            "answer_content": "It's my choice."
+          }
+        ],
+        "prev_question": "1",
+        "next_question": "6"
+      },
+      {
+        "question_id": "6",
+        "question_type": "Question",
+        "content": "Which other choice?",
+        "explanation": "Let input your answer",
+        "answers": [
+          {
+            "answer_id": "60",
+            "answer_content": "Let comment to this survey."
+          }
+        ],
+        "prev_question": "1"
+      },
+      {
+        "question_type": "EndSurvey",
+        "content": "Thanks for join we survey."
+      }
+    ]
+  },
+  "success": true
+}
