@@ -27,32 +27,51 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="40"/>
                     <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNg-p5-Cog">
-                    <rect key="frame" x="0.0" y="812" width="414" height="50"/>
-                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MTA-ES-yDP">
+                    <rect key="frame" x="5" y="812" width="404" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hw-d4-5kj">
+                            <rect key="frame" x="0.0" y="0.0" width="199.5" height="50"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="etm-Oi-9je"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNg-p5-Cog">
+                            <rect key="frame" x="204.5" y="0.0" width="199.5" height="50"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="BlS-Dl-iOT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <state key="normal" title="Finish">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="BlS-Dl-iOT"/>
+                        <constraint firstItem="6hw-d4-5kj" firstAttribute="width" secondItem="aNg-p5-Cog" secondAttribute="width" id="6mt-kY-503"/>
+                        <constraint firstItem="aNg-p5-Cog" firstAttribute="height" secondItem="6hw-d4-5kj" secondAttribute="height" id="EJ9-5u-LvC"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                    <state key="normal" title="Finish">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                </button>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F8m-MJ-OY0" secondAttribute="trailing" id="1Rf-Qv-pj9"/>
+                <constraint firstItem="MTA-ES-yDP" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="2HO-JE-UvG"/>
+                <constraint firstItem="MTA-ES-yDP" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="8Ej-lH-tH8"/>
                 <constraint firstItem="F8m-MJ-OY0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CW8-Yj-hFu"/>
+                <constraint firstItem="MTA-ES-yDP" firstAttribute="top" secondItem="mgM-hd-CdR" secondAttribute="bottom" id="Eww-CE-FYz"/>
                 <constraint firstItem="mgM-hd-CdR" firstAttribute="top" secondItem="F8m-MJ-OY0" secondAttribute="bottom" id="JQb-zn-rFh"/>
-                <constraint firstItem="aNg-p5-Cog" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="KA1-M8-Nd1"/>
+                <constraint firstItem="MTA-ES-yDP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="Uc0-GA-Ltw"/>
                 <constraint firstItem="mgM-hd-CdR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dTH-HU-Cpq"/>
-                <constraint firstItem="aNg-p5-Cog" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fHA-4i-KJT"/>
-                <constraint firstItem="aNg-p5-Cog" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="fWs-wZ-0XV"/>
                 <constraint firstItem="F8m-MJ-OY0" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="il0-lO-IW0"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aNg-p5-Cog" secondAttribute="trailing" id="lA1-Kr-WrR"/>
                 <constraint firstItem="mgM-hd-CdR" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="oPs-cd-vWa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mgM-hd-CdR" secondAttribute="trailing" id="sho-ZM-7Bp"/>
-                <constraint firstItem="aNg-p5-Cog" firstAttribute="top" secondItem="mgM-hd-CdR" secondAttribute="bottom" id="syP-Fj-em4"/>
                 <constraint firstItem="mgM-hd-CdR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="uF4-d7-5eX"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

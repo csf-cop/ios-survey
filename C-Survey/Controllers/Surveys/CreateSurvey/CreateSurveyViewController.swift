@@ -19,9 +19,10 @@ class CreateSurveyViewController: BaseViewController {
     }
     
     override func settingUI() {
-        guard let nib = Bundle.main.loadNibNamed(CustomNibView.addSingle.name, owner: self, options: nil)?[0] as? QuestionSingleChoice else {
+        guard let nib = Bundle.main.loadNibNamed("QuestionsTypeView", owner: self, options: nil)?[0] as? QuestionsTypeView else {
             return
         }
+        nib.viewModel = QuestionsTypeViewModel()
         addQuestionView.addSubview(nib)
     }
 
