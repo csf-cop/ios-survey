@@ -13,10 +13,14 @@ class QuestionsTypeView: UIView {
     @IBOutlet weak var questionsTypeLoadedView: UITableView!
     var viewModel: QuestionsTypeViewModel? {
         didSet {
+            // Load Header
             questionsTypeLoadedView.register(UITableViewCell.self, forCellReuseIdentifier: "myCell")
             questionsTypeLoadedView.dataSource = self
             questionsTypeLoadedView.delegate = self
+            questionsTypeLoadedView.sectionHeaderHeight = 50
             
+            let headerNib = UINib(nibName: "HeaderView", bundle: nil)
+            questionsTypeLoadedView.register(headerNib, forHeaderFooterViewReuseIdentifier: "HeaderView")
         }
     }
 }
@@ -44,13 +48,23 @@ extension QuestionsTypeView: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    // MARK: Demo display title.
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "header of \(viewModel!.titleForHeaderInSection(section: section) ?? "Default header")"
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "HeaderView" ) as! HeaderView
+
+        return headerView
     }
     
-    // MARK: Demo display footer
-    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return "footer of \(viewModel!.titleForFooterInSection(section: section) ?? "Default footer")"
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
     }
+    
+//    // MARK: Demo display title.
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return "header of \(viewModel!.titleForHeaderInSection(section: section) ?? "Default header")"
+//    }
+//
+//    // MARK: Demo display footer
+//    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+//        return "footer of \(viewModel!.titleForFooterInSection(section: section) ?? "Default footer")"
+//    }
 }

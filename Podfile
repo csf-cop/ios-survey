@@ -7,6 +7,7 @@ target 'C-Survey' do
 
   # Pods for C-Survey
   pod 'ObjectMapper'
+  pod 'SwifterSwift'
 
   target 'C-SurveyTests' do
     inherit! :search_paths
