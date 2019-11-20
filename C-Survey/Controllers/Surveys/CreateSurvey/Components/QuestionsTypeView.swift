@@ -21,10 +21,13 @@ class QuestionsTypeView: UIView {
             
             questionsTypeLoadedView.dataSource = self
             questionsTypeLoadedView.delegate = self
-            questionsTypeLoadedView.sectionHeaderHeight = 100
+//            questionsTypeLoadedView.sectionHeaderHeight = 100
             
             let headerNib = UINib(nibName: "QuestionFooterView", bundle: nil)
             questionsTypeLoadedView.register(headerNib, forHeaderFooterViewReuseIdentifier: "QuestionFooterView")
+            
+            // MARK: Custom for hide some cell.
+            questionsTypeLoadedView.contentInset = UIEdgeInsets(top: -1, left: 0, bottom: 0, right: 0)
         }
     }
 }
@@ -69,16 +72,29 @@ extension QuestionsTypeView: UITableViewDataSource, UITableViewDelegate {
         return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        // MARK: Case use for customView.
-        
-        return UIView()
+    // MARK: Demo display title.
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+            return "Question section"
+        case 1:
+            return "Question options"
+        default:
+            break
+        }
+        return "display header"
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        if let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "QuestionFooterView") as? QuestionFooterView {
-            return header
+        if section == 1 {
+            if let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "QuestionFooterView") as? QuestionFooterView {
+                return header
+            }
         }
-        return UIView()
+        return nil
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return section == 0 ? 1.0 : 32
     }
 }

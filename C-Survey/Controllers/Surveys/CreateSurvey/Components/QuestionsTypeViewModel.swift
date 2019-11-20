@@ -10,26 +10,23 @@ import Foundation
 
 class QuestionsTypeViewModel {
     
-//    private var data: [[String]] = [["test question"], ["test options"]]
-//    private var index: [String] = ["Question", "Options"]
-    
-    private var data = [ViewModelItem]()
+    private var data = [[ViewModelItem]]()
+    private var options = [ViewModelItem]()
     
     init() {
         let question = QuestionContentCellModel()
-        data.append(question)
+        data.append([question])
         let single = SingleChoiceCellModel()
-        data.append(single)
-        let multiple = MultipleChoiceCellModel()
-        data.append(multiple)
+        options.append(single)
+        data.append(options)
     }
     
     func numberOfSections() -> Int {
-        return 1
+        return data.count
     }
     
     func numberOfRowsInSection(section: Int) -> Int {
-        return data.count
+        return data[section].count
     }
     
     func titleForHeaderInSection(section: Int) -> String? {
@@ -41,6 +38,6 @@ class QuestionsTypeViewModel {
     }
     
     func cellData(index: IndexPath) -> ViewModelItem {
-        return data[index.row]
+        return data[index.section][index.row]
     }
 }

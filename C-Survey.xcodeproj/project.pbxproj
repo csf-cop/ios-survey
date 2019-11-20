@@ -287,6 +287,34 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		721EEE31238526B600C9B5AD /* QuestionContent */ = {
+			isa = PBXGroup;
+			children = (
+				721EEE212384F90D00C9B5AD /* QuestionContentCell.swift */,
+				721EEE222384F90D00C9B5AD /* QuestionContentCell.xib */,
+				721EEE272384F94B00C9B5AD /* QuestionContentCellModel.swift */,
+				721EEE2D23851C3F00C9B5AD /* QuestionFooterView.swift */,
+				721EEE2F23851C4C00C9B5AD /* QuestionFooterView.xib */,
+			);
+			path = QuestionContent;
+			sourceTree = "<group>";
+		};
+		721EEE32238526CE00C9B5AD /* AnswerOptions */ = {
+			isa = PBXGroup;
+			children = (
+				7267C219237D4E7E001729F9 /* MultipleChoiceCell.swift */,
+				7267C21A237D4E7E001729F9 /* MultipleChoiceCell.xib */,
+				7267C21D237D4EB7001729F9 /* MultipleChoiceCellModel.swift */,
+				7267C215237D4E5D001729F9 /* SingleChoiceCell.swift */,
+				7267C216237D4E5D001729F9 /* SingleChoiceCell.xib */,
+				7267C213237D4E36001729F9 /* SingleChoiceCellModel.swift */,
+				7267C21F237D4F7E001729F9 /* UsersCommentCell.swift */,
+				7267C220237D4F7E001729F9 /* UsersCommentCell.xib */,
+				7267C223237D4F9D001729F9 /* UsersCommentCellModel.swift */,
+			);
+			path = AnswerOptions;
+			sourceTree = "<group>";
+		};
 		7239D4512373C5F3000DA622 /* SurveysByCategory */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,20 +339,8 @@
 		7267C212237D4E09001729F9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				7267C219237D4E7E001729F9 /* MultipleChoiceCell.swift */,
-				7267C21A237D4E7E001729F9 /* MultipleChoiceCell.xib */,
-				7267C21D237D4EB7001729F9 /* MultipleChoiceCellModel.swift */,
-				7267C215237D4E5D001729F9 /* SingleChoiceCell.swift */,
-				7267C216237D4E5D001729F9 /* SingleChoiceCell.xib */,
-				7267C213237D4E36001729F9 /* SingleChoiceCellModel.swift */,
-				7267C21F237D4F7E001729F9 /* UsersCommentCell.swift */,
-				7267C220237D4F7E001729F9 /* UsersCommentCell.xib */,
-				7267C223237D4F9D001729F9 /* UsersCommentCellModel.swift */,
-				721EEE212384F90D00C9B5AD /* QuestionContentCell.swift */,
-				721EEE222384F90D00C9B5AD /* QuestionContentCell.xib */,
-				721EEE272384F94B00C9B5AD /* QuestionContentCellModel.swift */,
-				721EEE2D23851C3F00C9B5AD /* QuestionFooterView.swift */,
-				721EEE2F23851C4C00C9B5AD /* QuestionFooterView.xib */,
+				721EEE31238526B600C9B5AD /* QuestionContent */,
+				721EEE32238526CE00C9B5AD /* AnswerOptions */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
