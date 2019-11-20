@@ -1,22 +1,24 @@
 //
-//  MultipleChoiceCellModel.swift
+//  QuestionContentCellModel.swift
 //  C-Survey
 //
-//  Created by MBA0051 on 11/14/19.
+//  Created by MBA0051 on 11/20/19.
 //  Copyright © 2019 Tuan.Dang. All rights reserved.
 //
 
 import Foundation
 
-class MultipleChoiceCellModel: ViewModelItem {
+class QuestionContentCellModel: ViewModelItem {
     
     var type: ViewModelItemType {
-        return .multipleChoice
+        return .question
     }
     var section: String {
-        return "multiple cell"
+        return "Question content"
     }
     var rowCount: Int {
         return 1
     }
+    
+    
 }

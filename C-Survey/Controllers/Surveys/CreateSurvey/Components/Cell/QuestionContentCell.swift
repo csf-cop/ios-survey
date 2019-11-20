@@ -1,14 +1,14 @@
 //
-//  MultipleChoiceCell.swift
+//  QuestionContentCell.swift
 //  C-Survey
 //
-//  Created by MBA0051 on 11/14/19.
+//  Created by MBA0051 on 11/20/19.
 //  Copyright © 2019 Tuan.Dang. All rights reserved.
 //
 
 import UIKit
 
-class MultipleChoiceCell: UITableViewCell {
+class QuestionContentCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

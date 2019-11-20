@@ -1,18 +1,17 @@
 //
-//  HeaderView.swift
+//  QuestionFooterView.swift
 //  C-Survey
 //
-//  Created by MBA0051 on 11/15/19.
+//  Created by MBA0051 on 11/20/19.
 //  Copyright © 2019 Tuan.Dang. All rights reserved.
 //
 
 import UIKit
 
-class HeaderView: UITableViewHeaderFooterView {
-
-    @IBOutlet weak var displayValueLabel: UILabel!
-
+class QuestionFooterView: UITableViewHeaderFooterView {
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+
 }

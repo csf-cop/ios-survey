@@ -8,6 +8,17 @@
 
 import Foundation
 
-class SingleChoiceCellModel {
+class SingleChoiceCellModel: ViewModelItem {
     
+    var type: ViewModelItemType {
+        return .singleChoice
+    }
+    var section: String {
+        return "Single cell"
+    }
+    var rowCount: Int {
+        return 1
+    }
+    
+    // MARK: Insert more property and init method if nessesary.
 }
