@@ -15,16 +15,11 @@ class QuestionsTypeView: UIView {
         didSet {
             // Load Header
             questionsTypeLoadedView.register(QuestionContentCell.nib, forCellReuseIdentifier: QuestionContentCell.identifier)
-            questionsTypeLoadedView.register(SingleChoiceCell.nib, forCellReuseIdentifier: SingleChoiceCell.identifier)
-            questionsTypeLoadedView.register(MultipleChoiceCell.nib, forCellReuseIdentifier: MultipleChoiceCell.identifier)
-            questionsTypeLoadedView.register(UITableViewCell.self, forCellReuseIdentifier: "myCell")
-            
             questionsTypeLoadedView.dataSource = self
             questionsTypeLoadedView.delegate = self
 //            questionsTypeLoadedView.sectionHeaderHeight = 100
             
-            let headerNib = UINib(nibName: "QuestionFooterView", bundle: nil)
-            questionsTypeLoadedView.register(headerNib, forHeaderFooterViewReuseIdentifier: "QuestionFooterView")
+            questionsTypeLoadedView.register(QuestionFooterView.nib, forHeaderFooterViewReuseIdentifier: QuestionFooterView.identifier)
             
             // MARK: Custom for hide some cell.
             questionsTypeLoadedView.contentInset = UIEdgeInsets(top: -1, left: 0, bottom: 0, right: 0)
@@ -58,15 +53,7 @@ extension QuestionsTypeView: UITableViewDataSource, UITableViewDelegate {
             if let cell = tableView.dequeueReusableCell(withIdentifier: QuestionContentCell.identifier, for: indexPath) as? QuestionContentCell {
                 return cell
             }
-        case .singleChoice:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: SingleChoiceCell.identifier, for: indexPath) as? SingleChoiceCell {
-                return cell
-            }
-        case .multipleChoice:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: MultipleChoiceCell.identifier, for: indexPath) as? MultipleChoiceCell {
-                return cell
-            }
-        case .addMore:
+        default:
             return UITableViewCell()
         }
         return UITableViewCell()
@@ -82,19 +69,37 @@ extension QuestionsTypeView: UITableViewDataSource, UITableViewDelegate {
         default:
             break
         }
-        return "display header"
+        return nil
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         if section == 1 {
-            if let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "QuestionFooterView") as? QuestionFooterView {
+            if let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: QuestionFooterView.identifier) as? QuestionFooterView {
+//                header.delegate = self
                 return header
             }
         }
         return nil
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    // MARK: Hide first footer.
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return section == 0 ? 1.0 : 32
+    }
+}
+
+extension QuestionsTypeView: QuestionFooterViewDelegate {
+    func addMoreOptions(view: QuestionFooterView, type: Int) {
+        switch type {
+        case AddMoreType.answerOptions.value:
+//            print("Click to \(view.description) with type: \(type)")
+            if let viewModel = self.viewModel {
+                viewModel.addNewOption(section: 1)
+                self.questionsTypeLoadedView.reloadData()
+            }
+        default:
+            print("Fail click.")
+        }
+        
     }
 }

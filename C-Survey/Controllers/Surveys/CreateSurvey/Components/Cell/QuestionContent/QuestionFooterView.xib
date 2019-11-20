@@ -16,6 +16,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmf-dw-gdR">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <state key="normal" title="Add more"/>
+                    <connections>
+                        <action selector="addMoreButtonClick:" destination="-1" eventType="touchUpInside" id="cJ7-RJ-UGG"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

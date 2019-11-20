@@ -89,3 +89,14 @@ protocol ViewModelItem {
     var section: String { get }
     var rowCount: Int { get }
 }
+
+enum AddMoreType {
+    case answerOptions
+    
+    var value: Int {
+        switch self {
+        case .answerOptions:
+            return 1
+        }
+    }
+}

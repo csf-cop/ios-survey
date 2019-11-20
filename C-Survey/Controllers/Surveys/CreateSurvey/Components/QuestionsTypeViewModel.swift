@@ -16,9 +16,10 @@ class QuestionsTypeViewModel {
     init() {
         let question = QuestionContentCellModel()
         data.append([question])
-        let single = SingleChoiceCellModel()
-        options.append(single)
-        data.append(options)
+        data.append([question])
+//        let single = SingleChoiceCellModel()
+//        options.append(single)
+//        data.append(options)
     }
     
     func numberOfSections() -> Int {
@@ -39,5 +40,10 @@ class QuestionsTypeViewModel {
     
     func cellData(index: IndexPath) -> ViewModelItem {
         return data[index.section][index.row]
+    }
+    
+    func addNewOption(section: Int) {
+        let questionOption = QuestionContentCellModel()
+        data[section].append(questionOption)
     }
 }
