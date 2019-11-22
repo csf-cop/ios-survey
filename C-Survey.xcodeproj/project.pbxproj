@@ -22,6 +22,10 @@
 		720D23672375CA230006CD2C /* UserSurveyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D23662375CA230006CD2C /* UserSurveyCellViewModel.swift */; };
 		72109892237324290056EEA8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72109891237324290056EEA8 /* BaseViewController.swift */; };
 		72109894237324C60056EEA8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72109893237324C60056EEA8 /* HomeViewModel.swift */; };
+		721DC69F23876EB0007EFEDF /* UserGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DC69D23876EB0007EFEDF /* UserGroupsViewController.swift */; };
+		721DC6A023876EB0007EFEDF /* UserGroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721DC69E23876EB0007EFEDF /* UserGroupsViewController.xib */; };
+		721DC6A423876F6E007EFEDF /* UserContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DC6A223876F6E007EFEDF /* UserContactsViewController.swift */; };
+		721DC6A523876F6E007EFEDF /* UserContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721DC6A323876F6E007EFEDF /* UserContactsViewController.xib */; };
 		721EEE232384F90D00C9B5AD /* QuestionContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EEE212384F90D00C9B5AD /* QuestionContentCell.swift */; };
 		721EEE242384F90D00C9B5AD /* QuestionContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721EEE222384F90D00C9B5AD /* QuestionContentCell.xib */; };
 		721EEE282384F94B00C9B5AD /* QuestionContentCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EEE272384F94B00C9B5AD /* QuestionContentCellModel.swift */; };
@@ -138,6 +142,10 @@
 		720D23662375CA230006CD2C /* UserSurveyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSurveyCellViewModel.swift; sourceTree = "<group>"; };
 		72109891237324290056EEA8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		72109893237324C60056EEA8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		721DC69D23876EB0007EFEDF /* UserGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGroupsViewController.swift; sourceTree = "<group>"; };
+		721DC69E23876EB0007EFEDF /* UserGroupsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserGroupsViewController.xib; sourceTree = "<group>"; };
+		721DC6A223876F6E007EFEDF /* UserContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsViewController.swift; sourceTree = "<group>"; };
+		721DC6A323876F6E007EFEDF /* UserContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserContactsViewController.xib; sourceTree = "<group>"; };
 		721EEE212384F90D00C9B5AD /* QuestionContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentCell.swift; sourceTree = "<group>"; };
 		721EEE222384F90D00C9B5AD /* QuestionContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionContentCell.xib; sourceTree = "<group>"; };
 		721EEE272384F94B00C9B5AD /* QuestionContentCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentCellModel.swift; sourceTree = "<group>"; };
@@ -295,6 +303,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		721DC6A123876F4F007EFEDF /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				721DC6A223876F6E007EFEDF /* UserContactsViewController.swift */,
+				721DC6A323876F6E007EFEDF /* UserContactsViewController.xib */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
 		721EEE31238526B600C9B5AD /* QuestionContent */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +373,8 @@
 		727E000023866CCF00D5A5FB /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				721DC69D23876EB0007EFEDF /* UserGroupsViewController.swift */,
+				721DC69E23876EB0007EFEDF /* UserGroupsViewController.xib */,
 			);
 			path = Groups;
 			sourceTree = "<group>";
@@ -425,6 +444,7 @@
 		729495792372C8F30053CC1A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				721DC6A123876F4F007EFEDF /* Contacts */,
 				727E0001238672D600D5A5FB /* History */,
 				727E000023866CCF00D5A5FB /* Groups */,
 				720D23522375C05C0006CD2C /* Tabbar */,
@@ -834,6 +854,7 @@
 				7296C53F23794C460055043A /* response_question.xml in Resources */,
 				7267C222237D4F7E001729F9 /* UsersCommentCell.xib in Resources */,
 				7296C53E23794C460055043A /* response_question.json in Resources */,
+				721DC6A523876F6E007EFEDF /* UserContactsViewController.xib in Resources */,
 				729495AD2372CE7A0053CC1A /* SurveyInformationTableViewCell.xib in Resources */,
 				7294958F2372CB630053CC1A /* LoginViewController.xib in Resources */,
 				720310C1237A89370039EEE1 /* MultipleChoiceUIView.xib in Resources */,
@@ -850,6 +871,7 @@
 				729495782372C7440053CC1A /* WelcomeViewController.xib in Resources */,
 				729495C52372CF850053CC1A /* ChangePasswordViewController.xib in Resources */,
 				720310CA237A94FA0039EEE1 /* SurveyDetailViewCell.xib in Resources */,
+				721DC6A023876EB0007EFEDF /* UserGroupsViewController.xib in Resources */,
 				727E000B238673EA00D5A5FB /* SurveysHistoryViewController.xib in Resources */,
 				729495B22372CEC10053CC1A /* SurveyDetailViewController.xib in Resources */,
 			);
@@ -992,6 +1014,7 @@
 				72109892237324290056EEA8 /* BaseViewController.swift in Sources */,
 				72A217E4237BAAA600FCF22B /* Question.swift in Sources */,
 				7267C221237D4F7E001729F9 /* UsersCommentCell.swift in Sources */,
+				721DC6A423876F6E007EFEDF /* UserContactsViewController.swift in Sources */,
 				729495462372C5C30053CC1A /* AppDelegate.swift in Sources */,
 				729495A02372CCFC0053CC1A /* RateDragVerticalUIView.swift in Sources */,
 				7239D44E2373B79F000DA622 /* SurveyCategoryCellViewModel.swift in Sources */,
@@ -1034,6 +1057,7 @@
 				720310C9237A94FA0039EEE1 /* SurveyDetailViewCell.swift in Sources */,
 				729495882372CA640053CC1A /* APIRequest.swift in Sources */,
 				7267C21B237D4E7E001729F9 /* MultipleChoiceCell.swift in Sources */,
+				721DC69F23876EB0007EFEDF /* UserGroupsViewController.swift in Sources */,
 				72ACE05223853CEA00E7C5F2 /* CreateSurveyViewModel.swift in Sources */,
 				729495AC2372CE7A0053CC1A /* SurveyInformationTableViewCell.swift in Sources */,
 				720D23672375CA230006CD2C /* UserSurveyCellViewModel.swift in Sources */,

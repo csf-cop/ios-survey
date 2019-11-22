@@ -22,8 +22,9 @@ class LoginViewController: BaseViewController {
 
     @IBAction func checkLoginButtonClick(_ sender: UIButton) {
         // MARK: Move to Main page.
-         AppDelegate.shared.window?.rootViewController = MainTabbarViewController()
-        
+        let mainTabbar = MainTabbarViewController()
+        mainTabbar.selectedIndex = 2
+        AppDelegate.shared.window?.rootViewController = mainTabbar
         
         // MARK: Run test demo convert json response data to Object.
 //        loadDataFromJsonFile(file: "response_question.json")

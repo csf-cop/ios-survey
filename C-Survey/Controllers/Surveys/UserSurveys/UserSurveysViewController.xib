@@ -21,11 +21,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WB9-E8-YNe">
-                    <rect key="frame" x="0.0" y="44" width="414" height="766"/>
+                    <rect key="frame" x="0.0" y="88" width="414" height="722"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="766" id="4X3-8J-fOb"/>
-                    </constraints>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="575-1W-XNw">
                     <rect key="frame" x="0.0" y="812" width="414" height="50"/>
@@ -42,14 +39,30 @@
                         <action selector="deleteSurveyButtonClick:" destination="-1" eventType="touchUpInside" id="8xn-k5-M9v"/>
                     </connections>
                 </button>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFc-Nf-11w">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <items>
+                        <navigationItem title="User's surveys" id="3Kn-RX-eW6">
+                            <barButtonItem key="rightBarButtonItem" title="+" id="YXy-T4-gH2">
+                                <connections>
+                                    <action selector="createSurvey:" destination="-1" id="L4d-Jg-fHW"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="RFc-Nf-11w" firstAttribute="trailing" secondItem="WB9-E8-YNe" secondAttribute="trailing" id="AG6-dP-S6N"/>
                 <constraint firstItem="575-1W-XNw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Mgc-IV-eqi"/>
                 <constraint firstItem="575-1W-XNw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Mxl-zQ-KeD"/>
-                <constraint firstItem="WB9-E8-YNe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="XHi-xt-L3S"/>
+                <constraint firstItem="RFc-Nf-11w" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NPo-We-nuw"/>
+                <constraint firstItem="RFc-Nf-11w" firstAttribute="leading" secondItem="WB9-E8-YNe" secondAttribute="leading" id="RVI-UP-cZK"/>
+                <constraint firstItem="WB9-E8-YNe" firstAttribute="top" secondItem="RFc-Nf-11w" secondAttribute="bottom" id="U5X-vu-lli"/>
                 <constraint firstItem="WB9-E8-YNe" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZzR-Fa-KPo"/>
                 <constraint firstItem="575-1W-XNw" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="e5i-QU-QoY"/>
+                <constraint firstItem="575-1W-XNw" firstAttribute="top" secondItem="WB9-E8-YNe" secondAttribute="bottom" constant="2" id="eAj-4P-ufV"/>
                 <constraint firstItem="WB9-E8-YNe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="i60-Av-ecS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -29,10 +29,18 @@ class MainTabbarViewController: UITabBarController {
         let userSurveysNavi = UINavigationController(rootViewController: userSurveysController)
         userSurveysNavi.tabBarItem = UITabBarItem(title: "Surveys", image: UIImage(named: "surveys" )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "surveys_selected"))
         
+        let groupsController = UserGroupsViewController()
+        let groupNavi = UINavigationController(rootViewController: groupsController)
+        groupNavi.tabBarItem = UITabBarItem(title: "Groups", image: UIImage(named: "home" )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "home_selected"))
+        
+        let contactController = UserContactsViewController()
+        let contactNavi = UINavigationController(rootViewController: contactController)
+        contactNavi.tabBarItem = UITabBarItem(title: "Contacts", image: UIImage(named: "profile" )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "profile_selected"))
+        
         let userInforController = UserInformationViewController()
         let userNavi = UINavigationController(rootViewController: userInforController)
         userNavi.tabBarItem = UITabBarItem(title: "User info", image: UIImage(named: "profile" )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "profile_selected"))
         
-        viewControllers = [homeNavi, userSurveysNavi, userNavi]
+        viewControllers = [userSurveysNavi, groupNavi, homeNavi, contactNavi, userNavi]
     }
 }

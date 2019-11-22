@@ -19,7 +19,7 @@ class UserSurveysViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "User's surveys"
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     override func settingUI() {
@@ -29,17 +29,17 @@ class UserSurveysViewController: BaseViewController {
     }
     
     private func displayDeleteButton(display: Bool) {
-        if display == false {
-            deleteButton.isHidden = true
-            deleteButton.frame.size.height = 0
-            userSurveysTableView.translatesAutoresizingMaskIntoConstraints = false
-            userSurveysTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-        } else {
-            deleteButton.isHidden = false
-            deleteButton.frame.size.height = 50
-            userSurveysTableView.translatesAutoresizingMaskIntoConstraints = false
-            userSurveysTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = false
-        }
+//        if display == false {
+//            deleteButton.isHidden = true
+//            deleteButton.frame.size.height = 0
+//            userSurveysTableView.translatesAutoresizingMaskIntoConstraints = false
+//            userSurveysTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+//        } else {
+//            deleteButton.isHidden = false
+//            deleteButton.frame.size.height = 50
+//            userSurveysTableView.translatesAutoresizingMaskIntoConstraints = false
+//            userSurveysTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = false
+//        }
     }
     
     // MARK: Initial LongPress
@@ -70,6 +70,11 @@ class UserSurveysViewController: BaseViewController {
             userSurveysTableView.setEditing(false, animated: true)
             displayDeleteButton(display: false)
         }
+    }
+    @IBAction func createSurvey(_ sender: UIBarButtonItem) {
+        // MARK: Create survey. - Include done edit.
+        let newSurvey = CreateSurveyViewController()
+        navigationController?.pushViewController(newSurvey, animated: true)
     }
 }
 
