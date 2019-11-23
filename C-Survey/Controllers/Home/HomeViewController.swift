@@ -108,8 +108,8 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
 
 extension HomeViewController: SurverCategoryCellDelegate {
     func clickToCategory(view: SurverCategoryCollectionViewCell, value: Int) {
-        let surveysViewController = SurveysByCategoryViewController()
-        surveysViewController.viewModel = SurveysByCategoryViewModel(id: String(value))
+        let surveysViewController = SurveyDetailViewController()
+        surveysViewController.viewModel = SurveyDetailViewModel()
         navigationController?.pushViewController(surveysViewController, animated: true)
     }
 }

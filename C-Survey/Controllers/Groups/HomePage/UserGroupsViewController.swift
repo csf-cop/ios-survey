@@ -11,8 +11,7 @@ import UIKit
 class UserGroupsViewController: BaseViewController {
 
     @IBOutlet weak var groupsCollectionView: UICollectionView!
-    // MARK: Demo display name.
-    let nameRandom = ["Anna", "Hushka", "Jenny", "Churck", "Berge"]
+    var viewModel: UserGroupsViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +31,17 @@ class UserGroupsViewController: BaseViewController {
 extension UserGroupsViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        guard let viewModel = viewModel else {
+            return 0
+        }
+        return viewModel.numberOfSections()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        guard let viewModel = viewModel else {
+            return 0
+        }
+        return viewModel.numberOfItemsInSection(section)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -45,21 +50,6 @@ extension UserGroupsViewController: UICollectionViewDataSource, UICollectionView
         }
         cell.backgroundColor = .gray
         cell.layer.cornerRadius = 15
-//        cell.viewModel = SurveyCategoryCellViewModel(id: indexPath.row, value: String(indexPath.section))
-        
-        let name = nameRandom[Int.random(in: 0...4)]
-        // Initial with name.
-        let profileLabel = UILabel()
-        profileLabel.textColor = .white
-        profileLabel.font = UIFont(name: "System", size: 22)
-        profileLabel.text = String(name.first!)
-        profileLabel.textAlignment = .center
-        cell.contentView.addSubview(profileLabel)
-        
-        // MARK: Setting label anchor.
-        profileLabel.translatesAutoresizingMaskIntoConstraints = false
-        profileLabel.centerXAnchor.constraint(equalTo: cell.centerXAnchor).isActive = true
-        profileLabel.centerYAnchor.constraint(equalTo: cell.centerYAnchor).isActive = true
         
         cell.delegate = self
         return cell

@@ -8,23 +8,43 @@
 
 import UIKit
 
-class UserContactsViewController: UIViewController {
+class UserContactsViewController: BaseViewController {
 
+    @IBOutlet weak var searchContactButton: UISearchBar!
+    @IBOutlet weak var contactsTableView: UITableView!
+    var viewModel: UserContactsViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func settingData() {
+        contactsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
+        contactsTableView.dataSource = self
+        contactsTableView.delegate = self
     }
-    */
+}
 
+extension UserContactsViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        guard let viewModel = viewModel else { return 0 }
+        return viewModel.numberOfSections()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let viewModel = viewModel else { return 0 }
+        return viewModel.numberOfRowsInSection(section)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
+        cell.backgroundColor = .yellow
+        cell.textLabel?.text = viewModel?.cellData(index: indexPath)
+        return cell
+    }
+    
+    
 }
