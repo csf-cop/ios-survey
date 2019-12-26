@@ -67,6 +67,10 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/README.md
 fastlane/test_output
+<<<<<<< HEAD
+
+Pods/
+=======
 *.ipa
 *.app.dSYM.zip
 
@@ -83,3 +87,4 @@ swiftlint-report.json
 *.generated.swift
 
 .DS_Store
+>>>>>>> e9cb0236d4cb10562acc527f6fedd91e1fb57e9c
