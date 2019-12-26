@@ -1,3 +1,4 @@
+### Swift ###
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -37,7 +38,6 @@ playground.xcworkspace
 # Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
 # Packages/
 # Package.pins
-# Package.resolved
 .build/
 
 # CocoaPods
@@ -46,7 +46,7 @@ playground.xcworkspace
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
+Pods/
 
 # Carthage
 #
@@ -64,7 +64,27 @@ Carthage/Build
 
 fastlane/report.xml
 fastlane/Preview.html
-fastlane/screenshots/**/*.png
+fastlane/screenshots
+fastlane/README.md
 fastlane/test_output
+<<<<<<< HEAD
 
 Pods/
+=======
+*.ipa
+*.app.dSYM.zip
+
+# Bundler
+.bundle
+vendor/bundle
+*.coverage.txt
+swiftlint-report.json
+
+
+# R.Swift
+#
+# Add the *.generated.swift pattern to your .gitignore file to prevent unnecessary conflicts.
+*.generated.swift
+
+.DS_Store
+>>>>>>> e9cb0236d4cb10562acc527f6fedd91e1fb57e9c
