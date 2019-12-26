@@ -29,7 +29,7 @@ class MainTabbarViewController: UITabBarController {
         let userSurveysNavi = UINavigationController(rootViewController: userSurveysController)
         userSurveysNavi.tabBarItem = UITabBarItem(title: "Surveys", image: UIImage(named: "surveys" )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "surveys_selected"))
         
-        let userInforController = UserInformationViewController()
+        let userInforController = CreateSurveyViewController()
         let userNavi = UINavigationController(rootViewController: userInforController)
         userNavi.tabBarItem = UITabBarItem(title: "User info", image: UIImage(named: "profile" )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "profile_selected"))
         

@@ -22,6 +22,11 @@
 		720D23672375CA230006CD2C /* UserSurveyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D23662375CA230006CD2C /* UserSurveyCellViewModel.swift */; };
 		72109892237324290056EEA8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72109891237324290056EEA8 /* BaseViewController.swift */; };
 		72109894237324C60056EEA8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72109893237324C60056EEA8 /* HomeViewModel.swift */; };
+		721EEE232384F90D00C9B5AD /* QuestionContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EEE212384F90D00C9B5AD /* QuestionContentCell.swift */; };
+		721EEE242384F90D00C9B5AD /* QuestionContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721EEE222384F90D00C9B5AD /* QuestionContentCell.xib */; };
+		721EEE282384F94B00C9B5AD /* QuestionContentCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EEE272384F94B00C9B5AD /* QuestionContentCellModel.swift */; };
+		721EEE2E23851C3F00C9B5AD /* QuestionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EEE2D23851C3F00C9B5AD /* QuestionFooterView.swift */; };
+		721EEE3023851C4C00C9B5AD /* QuestionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721EEE2F23851C4C00C9B5AD /* QuestionFooterView.xib */; };
 		7239D44E2373B79F000DA622 /* SurveyCategoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239D44D2373B79F000DA622 /* SurveyCategoryCellViewModel.swift */; };
 		7239D4542373C610000DA622 /* SurveysByCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239D4522373C610000DA622 /* SurveysByCategoryViewController.swift */; };
 		7239D4552373C610000DA622 /* SurveysByCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7239D4532373C610000DA622 /* SurveysByCategoryViewController.xib */; };
@@ -30,6 +35,19 @@
 		7239D45E2373C72F000DA622 /* SurveysByCategoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7239D45C2373C72F000DA622 /* SurveysByCategoryViewCell.xib */; };
 		7239D4602373C75B000DA622 /* SurveysByCategoryCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239D45F2373C75B000DA622 /* SurveysByCategoryCellModel.swift */; };
 		7239D4622373EE1D000DA622 /* BaseIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239D4612373EE1D000DA622 /* BaseIdentity.swift */; };
+		7267C20B237D34B6001729F9 /* QuestionsTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267C20A237D34B6001729F9 /* QuestionsTypeView.swift */; };
+		7267C20D237D34D1001729F9 /* QuestionsTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7267C20C237D34D1001729F9 /* QuestionsTypeView.xib */; };
+		7267C20F237D35C6001729F9 /* QuestionsTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267C20E237D35C6001729F9 /* QuestionsTypeViewModel.swift */; };
+		7267C211237D4D1E001729F9 /* BaseQuestionsTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267C210237D4D1E001729F9 /* BaseQuestionsTypeCell.swift */; };
+		7267C214237D4E36001729F9 /* SingleChoiceCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267C213237D4E36001729F9 /* SingleChoiceCellModel.swift */; };
+		7267C217237D4E5D001729F9 /* SingleChoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267C215237D4E5D001729F9 /* SingleChoiceCell.swift */; };
+		7267C218237D4E5D001729F9 /* SingleChoiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7267C216237D4E5D001729F9 /* SingleChoiceCell.xib */; };
+		7267C21B237D4E7E001729F9 /* MultipleChoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267C219237D4E7E001729F9 /* MultipleChoiceCell.swift */; };
+		7267C21C237D4E7E001729F9 /* MultipleChoiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7267C21A237D4E7E001729F9 /* MultipleChoiceCell.xib */; };
+		7267C21E237D4EB7001729F9 /* MultipleChoiceCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267C21D237D4EB7001729F9 /* MultipleChoiceCellModel.swift */; };
+		7267C221237D4F7E001729F9 /* UsersCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267C21F237D4F7E001729F9 /* UsersCommentCell.swift */; };
+		7267C222237D4F7E001729F9 /* UsersCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7267C220237D4F7E001729F9 /* UsersCommentCell.xib */; };
+		7267C224237D4F9D001729F9 /* UsersCommentCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267C223237D4F9D001729F9 /* UsersCommentCellModel.swift */; };
 		729495462372C5C30053CC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729495452372C5C30053CC1A /* AppDelegate.swift */; };
 		7294954F2372C5C50053CC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7294954E2372C5C50053CC1A /* Assets.xcassets */; };
 		729495522372C5C50053CC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729495502372C5C50053CC1A /* LaunchScreen.storyboard */; };
@@ -77,8 +95,7 @@
 		7296C53F23794C460055043A /* response_question.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7296C53D23794C460055043A /* response_question.xml */; };
 		7296C5412379585E0055043A /* AnswerDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7296C5402379585E0055043A /* AnswerDomain.swift */; };
 		72A217E4237BAAA600FCF22B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A217E3237BAAA600FCF22B /* Question.swift */; };
-		72A217E7237BF4B100FCF22B /* QuestionSingleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A217E6237BF4B100FCF22B /* QuestionSingleChoice.swift */; };
-		72A217E9237BF4BB00FCF22B /* QuestionSingleChoice.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A217E8237BF4BB00FCF22B /* QuestionSingleChoice.xib */; };
+		72ACE05223853CEA00E7C5F2 /* CreateSurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ACE05123853CEA00E7C5F2 /* CreateSurveyViewModel.swift */; };
 		BF957AC136DC82DA31691AA3 /* Pods_C_Survey_C_SurveyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A472CB2862EB48AD0FA8AC00 /* Pods_C_Survey_C_SurveyUITests.framework */; };
 		F61ECBCF86775AA756BC83FD /* Pods_C_Survey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B29CD26A4598F64D2245A7 /* Pods_C_Survey.framework */; };
 /* End PBXBuildFile section */
@@ -118,6 +135,11 @@
 		720D23662375CA230006CD2C /* UserSurveyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSurveyCellViewModel.swift; sourceTree = "<group>"; };
 		72109891237324290056EEA8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		72109893237324C60056EEA8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		721EEE212384F90D00C9B5AD /* QuestionContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentCell.swift; sourceTree = "<group>"; };
+		721EEE222384F90D00C9B5AD /* QuestionContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionContentCell.xib; sourceTree = "<group>"; };
+		721EEE272384F94B00C9B5AD /* QuestionContentCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentCellModel.swift; sourceTree = "<group>"; };
+		721EEE2D23851C3F00C9B5AD /* QuestionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFooterView.swift; sourceTree = "<group>"; };
+		721EEE2F23851C4C00C9B5AD /* QuestionFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionFooterView.xib; sourceTree = "<group>"; };
 		7239D44D2373B79F000DA622 /* SurveyCategoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCategoryCellViewModel.swift; sourceTree = "<group>"; };
 		7239D4522373C610000DA622 /* SurveysByCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveysByCategoryViewController.swift; sourceTree = "<group>"; };
 		7239D4532373C610000DA622 /* SurveysByCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveysByCategoryViewController.xib; sourceTree = "<group>"; };
@@ -126,6 +148,19 @@
 		7239D45C2373C72F000DA622 /* SurveysByCategoryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveysByCategoryViewCell.xib; sourceTree = "<group>"; };
 		7239D45F2373C75B000DA622 /* SurveysByCategoryCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveysByCategoryCellModel.swift; sourceTree = "<group>"; };
 		7239D4612373EE1D000DA622 /* BaseIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIdentity.swift; sourceTree = "<group>"; };
+		7267C20A237D34B6001729F9 /* QuestionsTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsTypeView.swift; sourceTree = "<group>"; };
+		7267C20C237D34D1001729F9 /* QuestionsTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsTypeView.xib; sourceTree = "<group>"; };
+		7267C20E237D35C6001729F9 /* QuestionsTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsTypeViewModel.swift; sourceTree = "<group>"; };
+		7267C210237D4D1E001729F9 /* BaseQuestionsTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseQuestionsTypeCell.swift; sourceTree = "<group>"; };
+		7267C213237D4E36001729F9 /* SingleChoiceCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChoiceCellModel.swift; sourceTree = "<group>"; };
+		7267C215237D4E5D001729F9 /* SingleChoiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChoiceCell.swift; sourceTree = "<group>"; };
+		7267C216237D4E5D001729F9 /* SingleChoiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleChoiceCell.xib; sourceTree = "<group>"; };
+		7267C219237D4E7E001729F9 /* MultipleChoiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceCell.swift; sourceTree = "<group>"; };
+		7267C21A237D4E7E001729F9 /* MultipleChoiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultipleChoiceCell.xib; sourceTree = "<group>"; };
+		7267C21D237D4EB7001729F9 /* MultipleChoiceCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceCellModel.swift; sourceTree = "<group>"; };
+		7267C21F237D4F7E001729F9 /* UsersCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCommentCell.swift; sourceTree = "<group>"; };
+		7267C220237D4F7E001729F9 /* UsersCommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersCommentCell.xib; sourceTree = "<group>"; };
+		7267C223237D4F9D001729F9 /* UsersCommentCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCommentCellModel.swift; sourceTree = "<group>"; };
 		729495422372C5C30053CC1A /* C-Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C-Survey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		729495452372C5C30053CC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7294954E2372C5C50053CC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,8 +214,7 @@
 		7296C53D23794C460055043A /* response_question.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = response_question.xml; sourceTree = "<group>"; };
 		7296C5402379585E0055043A /* AnswerDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerDomain.swift; sourceTree = "<group>"; };
 		72A217E3237BAAA600FCF22B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		72A217E6237BF4B100FCF22B /* QuestionSingleChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSingleChoice.swift; sourceTree = "<group>"; };
-		72A217E8237BF4BB00FCF22B /* QuestionSingleChoice.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionSingleChoice.xib; sourceTree = "<group>"; };
+		72ACE05123853CEA00E7C5F2 /* CreateSurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSurveyViewModel.swift; sourceTree = "<group>"; };
 		9427A2D376707FBA82C136D9 /* Pods-C-Survey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-Survey.debug.xcconfig"; path = "Target Support Files/Pods-C-Survey/Pods-C-Survey.debug.xcconfig"; sourceTree = "<group>"; };
 		A472CB2862EB48AD0FA8AC00 /* Pods_C_Survey_C_SurveyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C_Survey_C_SurveyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33816A52DCCAA2F1828ADF9 /* Pods-C-SurveyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C-SurveyTests.release.xcconfig"; path = "Target Support Files/Pods-C-SurveyTests/Pods-C-SurveyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -250,8 +284,37 @@
 			children = (
 				72109891237324290056EEA8 /* BaseViewController.swift */,
 				7239D4612373EE1D000DA622 /* BaseIdentity.swift */,
+				7267C210237D4D1E001729F9 /* BaseQuestionsTypeCell.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		721EEE31238526B600C9B5AD /* QuestionContent */ = {
+			isa = PBXGroup;
+			children = (
+				721EEE212384F90D00C9B5AD /* QuestionContentCell.swift */,
+				721EEE222384F90D00C9B5AD /* QuestionContentCell.xib */,
+				721EEE272384F94B00C9B5AD /* QuestionContentCellModel.swift */,
+				721EEE2D23851C3F00C9B5AD /* QuestionFooterView.swift */,
+				721EEE2F23851C4C00C9B5AD /* QuestionFooterView.xib */,
+			);
+			path = QuestionContent;
+			sourceTree = "<group>";
+		};
+		721EEE32238526CE00C9B5AD /* AnswerOptions */ = {
+			isa = PBXGroup;
+			children = (
+				7267C219237D4E7E001729F9 /* MultipleChoiceCell.swift */,
+				7267C21A237D4E7E001729F9 /* MultipleChoiceCell.xib */,
+				7267C21D237D4EB7001729F9 /* MultipleChoiceCellModel.swift */,
+				7267C215237D4E5D001729F9 /* SingleChoiceCell.swift */,
+				7267C216237D4E5D001729F9 /* SingleChoiceCell.xib */,
+				7267C213237D4E36001729F9 /* SingleChoiceCellModel.swift */,
+				7267C21F237D4F7E001729F9 /* UsersCommentCell.swift */,
+				7267C220237D4F7E001729F9 /* UsersCommentCell.xib */,
+				7267C223237D4F9D001729F9 /* UsersCommentCellModel.swift */,
+			);
+			path = AnswerOptions;
 			sourceTree = "<group>";
 		};
 		7239D4512373C5F3000DA622 /* SurveysByCategory */ = {
@@ -271,6 +334,15 @@
 				7239D45B2373C72F000DA622 /* SurveysByCategoryViewCell.swift */,
 				7239D45C2373C72F000DA622 /* SurveysByCategoryViewCell.xib */,
 				7239D45F2373C75B000DA622 /* SurveysByCategoryCellModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7267C212237D4E09001729F9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				721EEE31238526B600C9B5AD /* QuestionContent */,
+				721EEE32238526CE00C9B5AD /* AnswerOptions */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -532,6 +604,7 @@
 				72A217E5237BEED800FCF22B /* Components */,
 				729495CB2372CFEA0053CC1A /* CreateSurveyViewController.swift */,
 				729495CC2372CFEA0053CC1A /* CreateSurveyViewController.xib */,
+				72ACE05123853CEA00E7C5F2 /* CreateSurveyViewModel.swift */,
 			);
 			path = CreateSurvey;
 			sourceTree = "<group>";
@@ -584,8 +657,10 @@
 		72A217E5237BEED800FCF22B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				72A217E6237BF4B100FCF22B /* QuestionSingleChoice.swift */,
-				72A217E8237BF4BB00FCF22B /* QuestionSingleChoice.xib */,
+				7267C212237D4E09001729F9 /* Cell */,
+				7267C20A237D34B6001729F9 /* QuestionsTypeView.swift */,
+				7267C20C237D34D1001729F9 /* QuestionsTypeView.xib */,
+				7267C20E237D35C6001729F9 /* QuestionsTypeViewModel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -724,20 +799,25 @@
 			files = (
 				729495B62372CEE40053CC1A /* SurveySubmitNotifyViewController.xib in Resources */,
 				720310BF237A88DB0039EEE1 /* SingleChoiceUIView.xib in Resources */,
+				7267C21C237D4E7E001729F9 /* MultipleChoiceCell.xib in Resources */,
 				720D23652375CA120006CD2C /* UserSurveyViewCell.xib in Resources */,
 				729495CE2372CFEA0053CC1A /* CreateSurveyViewController.xib in Resources */,
 				729495BB2372CF2E0053CC1A /* PreEndingSurveyViewController.xib in Resources */,
 				7239D45E2373C72F000DA622 /* SurveysByCategoryViewCell.xib in Resources */,
-				72A217E9237BF4BB00FCF22B /* QuestionSingleChoice.xib in Resources */,
+				7267C20D237D34D1001729F9 /* QuestionsTypeView.xib in Resources */,
 				729495D32372D0820053CC1A /* UserSurveysViewController.xib in Resources */,
 				7296C53F23794C460055043A /* response_question.xml in Resources */,
+				7267C222237D4F7E001729F9 /* UsersCommentCell.xib in Resources */,
 				7296C53E23794C460055043A /* response_question.json in Resources */,
 				729495AD2372CE7A0053CC1A /* SurveyInformationTableViewCell.xib in Resources */,
 				7294958F2372CB630053CC1A /* LoginViewController.xib in Resources */,
 				720310C1237A89370039EEE1 /* MultipleChoiceUIView.xib in Resources */,
 				7239D4552373C610000DA622 /* SurveysByCategoryViewController.xib in Resources */,
+				7267C218237D4E5D001729F9 /* SingleChoiceCell.xib in Resources */,
 				729495A92372CE4E0053CC1A /* SurverCategoryCollectionViewCell.xib in Resources */,
 				729495522372C5C50053CC1A /* LaunchScreen.storyboard in Resources */,
+				721EEE3023851C4C00C9B5AD /* QuestionFooterView.xib in Resources */,
+				721EEE242384F90D00C9B5AD /* QuestionContentCell.xib in Resources */,
 				729495942372CB9A0053CC1A /* HomeViewController.xib in Resources */,
 				729495C12372CF780053CC1A /* UserInformationViewController.xib in Resources */,
 				7294954F2372C5C50053CC1A /* Assets.xcassets in Resources */,
@@ -878,43 +958,55 @@
 				729495A42372CD990053CC1A /* SendComments.swift in Sources */,
 				729495A22372CD7A0053CC1A /* ImageEvidenceUIView.swift in Sources */,
 				729495BA2372CF2E0053CC1A /* PreEndingSurveyViewController.swift in Sources */,
+				721EEE282384F94B00C9B5AD /* QuestionContentCellModel.swift in Sources */,
 				720D23642375CA120006CD2C /* UserSurveyViewCell.swift in Sources */,
 				720D235E2375C7030006CD2C /* UserSurveysViewModel.swift in Sources */,
 				7296C53A237942620055043A /* QuestionDomain.swift in Sources */,
 				72109892237324290056EEA8 /* BaseViewController.swift in Sources */,
 				72A217E4237BAAA600FCF22B /* Question.swift in Sources */,
+				7267C221237D4F7E001729F9 /* UsersCommentCell.swift in Sources */,
 				729495462372C5C30053CC1A /* AppDelegate.swift in Sources */,
 				729495A02372CCFC0053CC1A /* RateDragVerticalUIView.swift in Sources */,
-				72A217E7237BF4B100FCF22B /* QuestionSingleChoice.swift in Sources */,
 				7239D44E2373B79F000DA622 /* SurveyCategoryCellViewModel.swift in Sources */,
 				720D23612375C92D0006CD2C /* SurveyDetailViewModel.swift in Sources */,
+				7267C214237D4E36001729F9 /* SingleChoiceCellModel.swift in Sources */,
 				729495D22372D0820053CC1A /* UserSurveysViewController.swift in Sources */,
 				7294959E2372CCDE0053CC1A /* RateDragHorizonUIView.swift in Sources */,
 				7294959C2372CCB90053CC1A /* MultipleChoiceUIView.swift in Sources */,
 				729495C92372CFC10053CC1A /* API.Survey.swift in Sources */,
+				721EEE232384F90D00C9B5AD /* QuestionContentCell.swift in Sources */,
 				7239D4542373C610000DA622 /* SurveysByCategoryViewController.swift in Sources */,
 				7239D4602373C75B000DA622 /* SurveysByCategoryCellModel.swift in Sources */,
+				721EEE2E23851C3F00C9B5AD /* QuestionFooterView.swift in Sources */,
 				729495822372CA030053CC1A /* API.swift in Sources */,
 				7239D45D2373C72F000DA622 /* SurveysByCategoryViewCell.swift in Sources */,
+				7267C20B237D34B6001729F9 /* QuestionsTypeView.swift in Sources */,
 				729495862372CA470053CC1A /* ApiManager.swift in Sources */,
 				720B7B5A23795CDC00729E09 /* RepeatDomain.swift in Sources */,
+				7267C217237D4E5D001729F9 /* SingleChoiceCell.swift in Sources */,
 				729495C42372CF850053CC1A /* ChangePasswordViewController.swift in Sources */,
 				729495C72372CFAE0053CC1A /* API.Users.swift in Sources */,
 				7294958A2372CA950053CC1A /* API.Downloader.swift in Sources */,
 				7294958E2372CB630053CC1A /* LoginViewController.swift in Sources */,
 				7239D4572373C666000DA622 /* SurveysByCategoryViewModel.swift in Sources */,
+				7267C224237D4F9D001729F9 /* UsersCommentCellModel.swift in Sources */,
 				729495B52372CEE40053CC1A /* SurveySubmitNotifyViewController.swift in Sources */,
 				720D235B2375C2DB0006CD2C /* MainTabbarViewController.swift in Sources */,
+				7267C20F237D35C6001729F9 /* QuestionsTypeViewModel.swift in Sources */,
 				729495932372CB9A0053CC1A /* HomeViewController.swift in Sources */,
 				729495B12372CEC10053CC1A /* SurveyDetailViewController.swift in Sources */,
 				7296C5412379585E0055043A /* AnswerDomain.swift in Sources */,
 				729495842372CA1F0053CC1A /* APIAndData.swift in Sources */,
 				729495A82372CE4E0053CC1A /* SurverCategoryCollectionViewCell.swift in Sources */,
 				7239D4622373EE1D000DA622 /* BaseIdentity.swift in Sources */,
+				7267C21E237D4EB7001729F9 /* MultipleChoiceCellModel.swift in Sources */,
+				7267C211237D4D1E001729F9 /* BaseQuestionsTypeCell.swift in Sources */,
 				72109894237324C60056EEA8 /* HomeViewModel.swift in Sources */,
 				729495CD2372CFEA0053CC1A /* CreateSurveyViewController.swift in Sources */,
 				720310C9237A94FA0039EEE1 /* SurveyDetailViewCell.swift in Sources */,
 				729495882372CA640053CC1A /* APIRequest.swift in Sources */,
+				7267C21B237D4E7E001729F9 /* MultipleChoiceCell.swift in Sources */,
+				72ACE05223853CEA00E7C5F2 /* CreateSurveyViewModel.swift in Sources */,
 				729495AC2372CE7A0053CC1A /* SurveyInformationTableViewCell.swift in Sources */,
 				720D23672375CA230006CD2C /* UserSurveyCellViewModel.swift in Sources */,
 				729495772372C7440053CC1A /* WelcomeViewController.swift in Sources */,

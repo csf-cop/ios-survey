@@ -74,3 +74,29 @@ enum CustomNibView {
         }
     }
 }
+
+// MARK: Types of view cell.
+enum ViewModelItemType {
+    case question
+    case singleChoice
+    case multipleChoice
+    case addMore
+}
+
+// MARK: Cell common methods.
+protocol ViewModelItem {
+    var type: ViewModelItemType { get }
+    var section: String { get }
+    var rowCount: Int { get }
+}
+
+enum AddMoreType {
+    case answerOptions
+    
+    var value: Int {
+        switch self {
+        case .answerOptions:
+            return 1
+        }
+    }
+}
